@@ -1,3 +1,5 @@
+![OSDCodeJam Banner](./assets/codejam-banner.png)
+
 ## Welcome to OSDCodeJam '21!
 
 ### Rules:
