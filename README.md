@@ -1,6 +1,17 @@
+![OSDCodeJam Banner](./assets/codejam-banner.png)
+
+<div align="center">
+
+[![OSDC Discord Server](https://img.shields.io/discord/357949642266116108?color=magenta&label=discord&logo=discord&logoColor=white)](https://discord.gg/vfhyHW5BkJ) [![OSDC Telegram Chat](https://img.shields.io/badge/chat-osdc-blue?logo=telegram)](https://t.me/jiitosdc)
+
+<hr>
+
 # Welcome to OSDCodeJam '21!
 
+</div>
+
 ## Rules
+
 - Each participant will be teamed up with 2 or 3 other people by us based on their skills and experience level.
 - Your project should be platform agnostic. For example, if you use filepaths in your submission, use pathlib to create platform agnostic Path objects instead of hardcoding the paths.
 - You must document precisely how to install and run your project. This should be as easy as possible (consider using dependency managers).
@@ -10,7 +21,9 @@
 - All code and assets must be compatible with an Open-Source license. This is because we will be merging your submission into this repo at the end of the jam.
 
 ## Judging
+
 Because programming is full of subtleties and judging is not an exact science, this section will inevitably fall short of being an exact guide for how to win, but it should at least give you an idea of what you should be mindful of as a participant.
+
 - **Code Style:** How easy to read, pleasant to work with, well commented, and self-documenting your code is.
 - **README:** How well your README file explains your project, its setup instructions and its features.
 - **Uniqueness and Creativity:** In order to level the playing field a bit, we've decided that this is the most important factor. If your idea is an exceptionally good one and you are a beginner, we will cut you some slack on style and execution. It is therefore crucial that you consider _what_ to do more carefully than exactly _how_ to do it.
