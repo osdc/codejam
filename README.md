@@ -2,35 +2,60 @@
 
 <div align="center">
 
-[![OSDC Discord Server](https://img.shields.io/discord/357949642266116108?color=magenta&label=discord&logo=discord&logoColor=white)](https://discord.gg/vfhyHW5BkJ) [![OSDC Telegram Chat](https://img.shields.io/badge/chat-osdc-blue?logo=telegram)](https://t.me/jiitosdc)
+[![OSDC Discord Server](https://img.shields.io/discord/357949642266116108?color=magenta&label=discord&logo=discord&logoColor=white)](https://discord.gg/vfhyHW5BkJ) [![OSDC Telegram Chat](https://img.shields.io/badge/Telegram-osdc-blue?logo=telegram)](https://t.me/jiitosdc)
 
 <hr>
 
-# Welcome to OSDCodeJam '21!
+# Welcome to OSDCodeJam'21!
 
 </div>
 
 **Register at:** TBA
 
-## Theme: TBA
+### The winners get Amazon gift vouchers worth Rs. 1k, and swags!
+
+## :ledger: Index
+- [Theme](#theme)
+- [Timeline](#timeline)
+- [Format](#format)
+- [Rules](#rules)
+- [Judging](#judging)
+
+
+## Theme
+### TBA
+
 
 ## Timeline
 
 - Registration: 1-5 January 2021
 - Teams Announcement: 8 January 2021
 - Theme Announcement: 8 January 2021
-- Jamming: 9-14 January 2021
+- Jamming (Coding Period): 9-14 January 2021
 - Results Meetup: TBD
+
+
+## Format
+
+- Participants register individually for the Jam, mentioning their technical skills.
+- The organizers group the participants in teams of 3 (or 4, depending on the number of registrations) based on their skills and experience to have teams with equal skill levels.
+- The organizers announce the teams and theme for the Jam.
+- Team members communicate and collaborate to make a project within the 6 days of the Jam, that fits their interpretation of the theme.
+- The project is submitted to this repo via a Pull Request (the steps for that will be added here after the team announcement, so keep an eye for that).
+- The guest judges choose the winners based on the [judging criteria](#judging), which will be announced, and their projects showcased on the Results Meetup.
+
 
 ## Rules
 
-- Each participant will be teamed up with 2 or 3 other people by us based on their skills and experience level.
+- This Jam is only open for JIIT Noida students (Both 62 and 128).
 - Your project should be platform agnostic. For example, if you use filepaths in your submission, use pathlib to create platform agnostic Path objects instead of hardcoding the paths.
-- You must document precisely how to install and run your project. This should be as easy as possible (consider using dependency managers).
-- All code must be written and committed within the time constrictions of the jam. Late commits may be reverted, so make sure you leave enough time to bug test your program.
+- There is no restriction on the type of project you come up with, or the languages you use. It can be anything from a web app to a system library (Hardware projects excluded).
+- You must document precisely how to install, setup and run your project. This should be as easy as possible (consider using dependency managers).
+- All code must be written and committed within the time constrictions of the Jam. Late commits may be reverted, so make sure you leave enough time to bug test your program.
 - You must get contributions from every member of your team, if you have an issue with someone on your team please contact a member of the administration team. These contributions do not necessarily have to be code, for example it's absolutely fine for someone to contribute management, documentation, graphics or audio. Team members that do not contribute will be removed from the Code Jam, and will not receive their share of any prizes the team may win.
 - You must use GitHub as source control.
 - All code and assets must be compatible with an Open-Source license. This is because we will be merging your submission into this repo at the end of the jam.
+
 
 ## Judging
 
