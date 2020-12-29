@@ -10,20 +10,22 @@
 
 </div>
 
-**Register at:** TBA
-
-### The winners get Amazon gift vouchers worth Rs. 1k, and swags!
 
 ## :ledger: Index
-- [Theme](#theme)
+- [Details](#details)
 - [Timeline](#timeline)
 - [Format](#format)
+- [Submitting your Project](#submitting-your-project)
 - [Rules](#rules)
 - [Judging](#judging)
 
+<hr>
 
-## Theme
-### TBA
+## Details
+- #### The winners get Amazon gift vouchers worth Rs. 1k, and swags!
+
+- **Register at:** TBA
+- **Theme:** TBA
 
 
 ## Timeline
@@ -41,8 +43,12 @@
 - The organizers group the participants in teams of 3 (or 4, depending on the number of registrations) based on their skills and experience to have teams with equal skill levels.
 - The organizers announce the teams and theme for the Jam.
 - Team members communicate and collaborate to make a project within the 6 days of the Jam, that fits their interpretation of the theme.
-- The project is submitted to this repo via a Pull Request (the steps for that will be added here after the team announcement, so keep an eye for that).
+- The project is [submitted to this repo](#submitting-your-project) via a Pull Request.
 - The guest judges choose the winners based on the [judging criteria](#judging), which will be announced, and their projects showcased on the Results Meetup.
+
+
+## Submitting your Project
+### To be updated after teams are announced.
 
 
 ## Rules
@@ -66,4 +72,4 @@ Because programming is full of subtleties and judging is not an exact science, t
 - **Uniqueness and Creativity:** In order to level the playing field a bit, we've decided that this is the most important factor. If your idea is an exceptionally good one and you are a beginner, we will cut you some slack on style and execution. It is therefore crucial that you consider _what_ to do more carefully than exactly _how_ to do it.
 - **Adherence to Theme:** How uniquely you interpreted the theme and justified it with your idea.
 - **Execution:** An important factor is whether your solution is the best solution to the problem you are solving. If your solution is overly convoluted, this will count against you in our evaluation. While the code jam is ongoing, organizers will be available to you for any help or suggestions.
-- **Teamwork:** During the code jam, you will be assigned teammates. It is crucial that you find a way to work with your teammates, as we will be evaluating your ability to work as a team. Team members who constantly bicker, complain about each other, or fail to divide up tasks so that everyone can contribute will be penalized when we evaluate the code jam. This does not, however, mean that a team that has a "bad egg" will automatically be unable to win the code-jam. If a team member refuses to play well with the rest of the team or does not participate in the jam, we will usually remove that person from the team and attempt to find a new teammate for the team to replace them.
+- **Teamwork:** During the Jam, you will be assigned teammates. It is crucial that you find a way to work with your teammates, as we will be evaluating your ability to work as a team. Team members who constantly bicker, complain about each other, or fail to divide up tasks so that everyone can contribute will be penalized when we evaluate the code jam. This does not, however, mean that a team that has a "bad egg" will automatically be unable to win the code-jam. If a team member refuses to play well with the rest of the team or does not participate in the jam, we will usually remove that person from the team and attempt to find a new teammate for the team to replace them.
