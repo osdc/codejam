@@ -10,6 +10,18 @@
 
 </div>
 
+**Register at:** TBA
+
+## Theme: TBA
+
+## Timeline
+
+- Registration: 1-5 January 2021
+- Teams Announcement: 8 January 2021
+- Theme Announcement: 8 January 2021
+- Jamming: 9-14 January 2021
+- Results Meetup: TBD
+
 ## Rules
 
 - Each participant will be teamed up with 2 or 3 other people by us based on their skills and experience level.
