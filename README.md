@@ -12,7 +12,8 @@
 
 
 ## :ledger: Index
-- [Details](#details)
+- [What is a Code Jam?](#what-is-a-code-jam)
+- [Particulars](#particulars)
 - [Timeline](#timeline)
 - [Format](#format)
 - [Submitting your Project](#submitting-your-project)
@@ -21,10 +22,13 @@
 
 <hr>
 
-## Details
-- #### The winners get Amazon gift vouchers worth Rs. 1k, and swags!
+## What is a Code Jam?
+This is something you might be asking yourself. A Code Jam is a chance to create something with a team. In each Jam, you are paired up with a group of other users just like yourself with whom you collaborate and make a project on a given theme. You then have around a week's time to create the best project you can. See [Format](#format) for detailed information.
 
-- **Register at:** TBA
+## Particulars
+- #### The winners get Amazon gift cards worth Rs. 1k, and swags!
+
+- **Register at:** https://kutt.it/osdcodejamreg
 - **Theme:** TBA
 
 
@@ -54,7 +58,7 @@
 ## Rules
 
 - This Jam is only open for JIIT Noida students (Both 62 and 128).
-- Your project should be platform agnostic. For example, if you use filepaths in your submission, use pathlib to create platform agnostic Path objects instead of hardcoding the paths.
+- Your project should be platform agnostic. For example, if you use filepaths in your submission, use pathlib (in Python) to create platform agnostic Path objects instead of hardcoding the paths.
 - There is no restriction on the type of project you come up with, or the languages you use. It can be anything from a web app to a system library (Hardware projects excluded).
 - You must document precisely how to install, setup and run your project. This should be as easy as possible (consider using dependency managers).
 - All code must be written and committed within the time constrictions of the Jam. Late commits may be reverted, so make sure you leave enough time to bug test your program.
