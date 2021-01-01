@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![OSDC Discord Server](https://img.shields.io/discord/357949642266116108?color=magenta&label=discord&logo=discord&logoColor=white)](https://discord.gg/vfhyHW5BkJ) [![OSDC Telegram Chat](https://img.shields.io/badge/Telegram-osdc-blue?logo=telegram)](https://t.me/jiitosdc)
+[![OSDC Discord Server](https://img.shields.io/discord/357949642266116108?color=magenta&label=discord&logo=discord&logoColor=white)](https://discord.gg/vfhyHW5BkJ) [![OSDC Telegram Chat](https://img.shields.io/badge/Telegram-osdc-blue?logo=telegram)](https://t.me/jiitosdc) [![Registration Link](https://img.shields.io/badge/registration-link-bright%20green)](https://kutt.it/osdcodejamreg)
 
 <hr>
 
@@ -10,8 +10,8 @@
 
 </div>
 
-
 ## :ledger: Index
+
 - [What is a Code Jam?](#what-is-a-code-jam)
 - [Particulars](#particulars)
 - [Timeline](#timeline)
@@ -23,14 +23,16 @@
 <hr>
 
 ## What is a Code Jam?
+
 This is something you might be asking yourself. A Code Jam is a chance to create something with a team. In each Jam, you are paired up with a group of other users just like yourself with whom you collaborate and make a project on a given theme. You then have around a week's time to create the best project you can. See [Format](#format) for detailed information.
 
 ## Particulars
+
 - #### The winners get Amazon gift cards worth Rs. 1k, and swags!
 
 - **Register at:** https://kutt.it/osdcodejamreg
-- **Theme:** TBA
 
+- **Theme:** TBA
 
 ## Timeline
 
@@ -39,7 +41,6 @@ This is something you might be asking yourself. A Code Jam is a chance to create
 - Theme Announcement: 8 January 2021
 - Jamming (Coding Period): 9-14 January 2021
 - Results Meetup: TBD
-
 
 ## Format
 
@@ -50,10 +51,9 @@ This is something you might be asking yourself. A Code Jam is a chance to create
 - The project is [submitted to this repo](#submitting-your-project) via a Pull Request.
 - The guest judges choose the winners based on the [judging criteria](#judging), which will be announced, and their projects showcased on the Results Meetup.
 
-
 ## Submitting your Project
-### To be updated after teams are announced.
 
+### To be updated after teams are announced.
 
 ## Rules
 
@@ -65,7 +65,6 @@ This is something you might be asking yourself. A Code Jam is a chance to create
 - You must get contributions from every member of your team, if you have an issue with someone on your team please contact a member of the administration team. These contributions do not necessarily have to be code, for example it's absolutely fine for someone to contribute management, documentation, graphics or audio. Team members that do not contribute will be removed from the Code Jam, and will not receive their share of any prizes the team may win.
 - You must use GitHub as source control.
 - All code and assets must be compatible with an Open-Source license. This is because we will be merging your submission into this repo at the end of the jam.
-
 
 ## Judging
 
