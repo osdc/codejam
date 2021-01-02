@@ -24,7 +24,7 @@
 
 ## What is a Code Jam?
 
-This is something you might be asking yourself. A Code Jam is a chance to create something with a team. In each Jam, you are paired up with a group of other users just like yourself with whom you collaborate and make a project on a given theme. You then have around a week's time to create the best project you can. See [Format](#format) for detailed information.
+This is something you might be asking yourself. A Code Jam is a chance to create something with a team. You are paired up with a group of other participants just like yourself with whom you collaborate and make a project on a given theme. You then have around a week's time to create the best project you can. See [Format](#format) for detailed information.
 
 ## Particulars
 
