@@ -51,7 +51,22 @@ This is something you might be asking yourself. A Code Jam is a chance to create
 
 ## Submitting your Project
 
-### To be updated after teams are announced.
+#### 1. Fork this repository
+Start by [forking this repository](https://github.com/osdc/codejam-21/fork). Only one team member needs to do this, the other members can fork that person's fork and work on it.
+
+#### 2. Find your team folder in the repository
+The repository should already contain a subdirectory named after your team. _All your project files must be contained within your team's subdirectory only_. If you make any changes to files other than those in your team folder, we will not be able to merge your PR.
+
+If you're using a CI/CD workflow, and require configuration files/folders in the root of the repository, either try to use a unique name (e.g. prefix the configuration files with your team name) or remove the files/directories just before the final submission.
+
+#### 3. Create a pull request
+Only one team member has to do this (The same one who forked this repo directly).<br>
+Open a pull request from your fork's `main` to the `main` branch of this repository in order to submit your project. You should use the name of your team as the title of the Pull Request. Please open your Pull Request at the start of the Jam (see the next step for clarification).<br>
+**Avoid opening spam PRs to the repo, and there should be only one PR from each team.**
+
+#### 4. Keep pushing to your main branch
+The Pull Request you created will keep getting updated automatically whenever you push code to `main` branch on your fork, so you can create the PR whenever you want, and you only have to do it once. You do not need to wait until the very end of the Jam to make the PR and risk missing the deadline. Just keep pushing code to your `main` branch as you keep progressing, and do your best to finish before the Jam ends!<br>
+When working as a team, you should consider learning about feature branches so that you don't all work directly on the `main` branch and cause each other a bunch of conflicts. For a short explanation of how this works, [see this video](https://www.youtube.com/watch?v=j7YDbrS9I48).
 
 ## Rules
 
