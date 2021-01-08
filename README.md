@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![OSDC Discord Server](https://img.shields.io/discord/357949642266116108?color=magenta&label=discord&logo=discord&logoColor=white)](https://discord.gg/vfhyHW5BkJ) [![OSDC Telegram Chat](https://img.shields.io/badge/Telegram-osdc-blue?logo=telegram)](https://t.me/jiitosdc) [![Registration Link](https://img.shields.io/badge/registration-link-bright%20green)](https://kutt.it/osdcodejamreg)
+[![OSDC Discord Server](https://img.shields.io/discord/357949642266116108?color=magenta&label=discord&logo=discord&logoColor=white)](https://discord.gg/vfhyHW5BkJ) [![OSDC Telegram Chat](https://img.shields.io/badge/Telegram-osdc-blue?logo=telegram)](https://t.me/jiitosdc)
 
 <hr>
 
@@ -30,9 +30,7 @@ This is something you might be asking yourself. A Code Jam is a chance to create
 
 - #### The winners get Amazon gift cards worth Rs. 1k, and swags!
 
-- **Register at:** https://kutt.it/osdcodejamreg
-
-- **Theme:** Combining Opposites
+- **Theme:** ***Combining Opposites***
 
 ## Timeline
 
