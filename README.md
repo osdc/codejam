@@ -32,7 +32,7 @@ This is something you might be asking yourself. A Code Jam is a chance to create
 
 - **Register at:** https://kutt.it/osdcodejamreg
 
-- **Theme:** TBA
+- **Theme:** Combining Opposites
 
 ## Timeline
 
