@@ -1,0 +1,12 @@
+.firmFund_image > img {
+  height: 100px;
+  width: 100px;
+}
+
+.firmFund_about > p {
+  font-size: 1.1rem;
+}
+
+.firmFund_about {
+  display: none;
+}

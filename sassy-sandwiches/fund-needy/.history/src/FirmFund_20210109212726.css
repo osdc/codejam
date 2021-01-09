@@ -1,0 +1,7 @@
+.firmFund {
+  display: none;
+}
+.firmFund_image > img {
+  height: 100px;
+  width: 100px;
+}

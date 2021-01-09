@@ -1,0 +1,10 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.navbar_login_signup > button {
+  padding: 5px;
+}

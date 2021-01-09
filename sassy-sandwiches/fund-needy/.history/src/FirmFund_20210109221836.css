@@ -1,0 +1,22 @@
+.firmFund {
+  text-align: center;
+  background-color: #fff;
+  padding: 10px;
+  width: 90%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.firmFund_image > img {
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+.firmFund_about > p {
+  width: 80%;
+  font-size: 1.1rem;
+}
+
+.firmFund_about {
+}

@@ -1,0 +1,14 @@
+.showcase_main {
+  background: url("https://digitalpromise.org/wp-content/uploads/2019/06/funding.png");
+  color: #ffffff;
+  padding: 20px;
+}
+
+.showcase_main > h1 {
+  font-size: 3rem;
+  width: 50%;
+}
+
+.showcase_main > p {
+  font-size: 2rem;
+}

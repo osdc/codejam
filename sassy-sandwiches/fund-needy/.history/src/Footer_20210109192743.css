@@ -1,0 +1,17 @@
+.footer {
+  text-align: center;
+  background-color: #02a95c;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer > h1 {
+  font-size: 2.3rem;
+  font-family: "Poppins";
+}
+
+.footer > p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-top: 10px;
+}

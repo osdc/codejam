@@ -1,0 +1,40 @@
+.showcase_main {
+  background: url("https://images.moneycontrol.com/static-mcnews/2020/09/Mutual-Fund-1-02092020.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  padding: 20px;
+  min-height: 600px;
+  text-align: center;
+}
+
+.showcase_main > h1 {
+  font-size: 3rem;
+  width: 50%;
+  margin: auto;
+  margin-top: 150px;
+}
+
+.showcase_main > p {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+.showcase_main > button {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 1.1rem;
+  border-radius: 20px;
+  width: 10%;
+  margin-top: 20px;
+}
+
+.showcase_main > button:nth-of-type(1) {
+  margin-right: 10px;
+}
+
+.showcase_overlay {
+  min-height: 600px;
+  position: absolute;
+  color: #333;
+}

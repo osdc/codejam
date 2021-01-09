@@ -1,0 +1,23 @@
+.showcase_main {
+  background: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fnanotempertech.com%2Fblog%2F10-ways-to-fund-your-neurodegenerative-disease-research-that-arent-just-the-government%2F&psig=AOvVaw2jWkJlGMAzjefn3lYbeuvq&ust=1610272978406000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMCrqbrMju4CFQAAAAAdAAAAABAP");
+  color: #ffffff;
+  padding: 20px;
+}
+
+.showcase_main > h1 {
+  font-size: 3rem;
+  width: 50%;
+}
+
+.showcase_main > p {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+.showcase_main > button {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 1.1rem;
+  border-radius: 20px;
+  width: 7%;
+}

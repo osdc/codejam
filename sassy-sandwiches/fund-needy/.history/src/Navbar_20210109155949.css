@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.navbar_logo > h1 {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar_login_signup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar_login_signup > button:nth-of-type(1) {
+  margin-right: 10px;
+}
+
+.navbar_login_signup > button {
+  padding: 5px;
+  font-size: 1.1rem;
+  outline: none;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  width: 100%;
+}

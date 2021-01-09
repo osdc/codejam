@@ -1,0 +1,8 @@
+.showcase {
+  background: url("https://digitalpromise.org/wp-content/uploads/2019/06/funding.png");
+  color: #ffffff;
+}
+
+.showcase_main > h1 {
+  font-size: 3rem;
+}
