@@ -2,9 +2,8 @@ import React from "react";
 import "./Needy.css";
 import { useHistory } from "react-router-dom";
 
-function Needy() {
+function Needy({ firm_name, amount, need_funds }) {
   const History = useHistory();
-
   const handleFund = (e) => {
     History.push("/firmname");
   };
@@ -12,23 +11,18 @@ function Needy() {
   return (
     <div className="needy">
       <div className="needy_header">
-        <h1>Apollo Builders</h1>
+        <h1>{firm_name}</h1>
         <img
           src="https://i.pinimg.com/originals/ba/fc/15/bafc1525cef9606c5c064694ca8e60fb.jpg"
           alt=""
         />
       </div>
       <div className="needy_body">
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam debitis
-          doloribus maiores qui veniam atque corrupti? Dolorem aliquid repellat,
-          debitis officia sunt quasi provident, autem tenetur recusandae sit in
-          illo?
-        </p>
+        <p>{need_funds}</p>
       </div>
       <div className="needy_footer">
         <p>
-          <strong>Fund Req: $2000</strong>
+          <strong>Fund Req: ${amount}</strong>
         </p>
         <button onClick={handleFund}>Fund</button>
       </div>
