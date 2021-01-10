@@ -1,9 +1,37 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./FirmFund.css";
 import { useHistory } from "react-router-dom";
+import { db } from "../../firebase";
 
 function FirmFund() {
   const History = useHistory();
+  let url = window.location.pathname;
+  let arr = url.split("/");
+  const id = arr[1];
+
+  const [firm_image, setFirm_image] = useState();
+  const [about_firm, setAbout_firm] = useState();
+  const [need_funds, setNeed_funds] = useState();
+  const [amount, setAmount] = useState();
+
+  useEffect(() => {
+    db.collection("users")
+      .doc(id)
+      .get()
+      .then((doc) => {
+        if (doc.exists) {
+          setFirm_image(doc.data().firm_image);
+          setAbout_firm(doc.data().about_firm);
+          setNeed_funds(doc.data().need_funds);
+          setAmount(doc.data().amount);
+        } else {
+          console.log("No such firm!");
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  });
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -13,32 +41,18 @@ function FirmFund() {
   return (
     <div className="firmFund">
       <div className="firmFund_image">
-        <img
-          src="https://i.pinimg.com/originals/ba/fc/15/bafc1525cef9606c5c064694ca8e60fb.jpg"
-          alt=""
-        />
+        <img src={firm_image} alt="" />
       </div>
       <div className="firmFund_about">
         <h2>About our Firm</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, porro
-          fuga itaque ullam sunt, quam voluptatum beatae, reprehenderit ratione
-          accusamus in? Doloremque eaque veniam accusamus, molestiae fuga eum
-          illum. Quia consectetur id omnis eius expedita, rem facilis iure
-          similique praesentium voluptate nisi dolore explicabo quos totam porro
-          ab atque maiores.
-        </p>
+        <p>{about_firm}</p>
       </div>
       <div className="firmFund_need">
         <h2>Why do we need Funds?</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi fugit,
-          corrupti qui odit dolores error ullam maxime unde autem amet natus rem
-          facilis excepturi impedit expedita sed et deserunt voluptas!
-        </p>
+        <p>{need_funds}</p>
       </div>
       <div className="firmFund_fund">
-        <h2>Fund Req: $2000</h2>
+        <h2>Fund Req: ${amount}</h2>
         <form onSubmit={handleSubmit}>
           <input type="number" required placeholder="Enter the Amount..." />
           <button>Fund</button>

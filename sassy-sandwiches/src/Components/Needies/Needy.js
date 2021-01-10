@@ -2,10 +2,10 @@ import React from "react";
 import "./Needy.css";
 import { useHistory } from "react-router-dom";
 
-function Needy({ firm_name, amount, need_funds, firm_image }) {
+function Needy({ firm_name, amount, need_funds, firm_image, firm_id }) {
   const History = useHistory();
   const handleFund = (e) => {
-    History.push("/firmname");
+    History.push(`/${firm_id}`);
   };
 
   return (

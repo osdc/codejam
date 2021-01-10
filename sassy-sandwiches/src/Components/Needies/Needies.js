@@ -24,6 +24,7 @@ function Needies() {
         {needies.map(({ id, needy }) => (
           <Needy
             key={id}
+            firm_id={id}
             amount={needy.amount}
             need_funds={needy.need_funds}
             firm_name={needy.firm_name}
