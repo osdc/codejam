@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import "./Signup.css";
 import { Link, useHistory } from "react-router-dom";
+import { v4 as uuidv4 } from "uuid";
 import { useAuth } from "../../AuthContext";
 import { db } from "../../firebase";
 
@@ -28,6 +29,7 @@ function Signup() {
       setLoading(true);
       await signup(email, password);
       db.collection("users").add({
+        id: uuidv4(),
         name: name,
         phone_num: phone,
         email: email,

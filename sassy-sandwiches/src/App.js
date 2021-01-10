@@ -24,7 +24,7 @@ function App() {
         <Route path="/signup" component={Signup} />
         <Route path="/needies" component={Needies} />
         <PrivateRoute path="/personal" component={Personal} />
-        <PrivateRoute path="/needFunds" component={NeedFunds} />
+        <Route path="/needFunds" component={NeedFunds} />
         <Route path="/forgotPassword" component={ForgotPassword} />
         <Route path="/:firm_id" component={FirmFund} />
       </Switch>

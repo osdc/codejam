@@ -1,0 +1,74 @@
+.needFunds {
+  padding: 50px;
+  width: 60%;
+  margin: auto;
+}
+
+.needFunds_main {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  -webkit-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.75);
+}
+
+.needFunds_main > form > input[type="text"] {
+  width: 99%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.needFunds_main > form > input[type="file"] {
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #333;
+}
+
+.needFunds_main > form > input[type="number"] {
+  width: 99%;
+  font-size: 1.2rem;
+  padding: 5px;
+}
+
+.needFunds_main > form > textarea {
+  width: 99%;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+
+.needFunds_main > form > label {
+  margin-bottom: 5px;
+}
+
+.needFunds_main > form > label > b {
+  font-size: 2rem;
+}
+
+.needFunds_main_flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.needFunds_main > form > button {
+  background-color: #02a95c;
+  padding: 10px;
+  color: white;
+  margin-top: 20px;
+  border-radius: 20px;
+  border: 1px solid #02a95c;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
