@@ -1,0 +1,93 @@
+.signup {
+  padding: 50px;
+}
+
+.signup_container > form > input[type="text"],
+.signup_container > form > input[type="email"],
+.signup_container > form > input[type="password"],
+.signup_container > form > input[type="number"] {
+  width: 95%;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  font-size: 1.2rem;
+  outline: none;
+}
+
+.signup_container {
+  width: 50%;
+  margin: auto;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.75);
+}
+
+.signup_container > h1 {
+  font-size: 3rem;
+  font-family: "Poppins";
+  text-transform: uppercase;
+}
+
+.signup_container > form > p:nth-of-type(2) {
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+
+.signup_clearfix {
+  display: flex;
+  justify-content: space-between;
+}
+
+.signup_clearfix > button:nth-of-type(1) {
+  margin-right: 10px;
+}
+
+.signup_clearfix > button {
+  background-color: #02a95c;
+  color: white;
+  margin: 8px 0;
+  border-radius: 20px;
+  border: 1px solid #02a95c;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  outline: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+.cancelbtn,
+.signupbtn {
+  float: left;
+  width: 50%;
+}
+
+.signup_clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 300px) {
+  .cancelbtn,
+  .signupbtn {
+    width: 100%;
+  }
+}

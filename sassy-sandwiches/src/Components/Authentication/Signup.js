@@ -1,10 +1,127 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import "./Signup.css";
+import { Link, useHistory } from "react-router-dom";
+import { useAuth } from "../../AuthContext";
+import { db } from "../../firebase";
 
 function Signup() {
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [password, setPassword] = useState("");
+  const [confPassword, setConfPassword] = useState("");
+
+  const { signup } = useAuth();
+  const History = useHistory();
+
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (password !== confPassword) {
+      return setError("Passwords do not match");
+    }
+
+    try {
+      setLoading(true);
+      await signup(email, password);
+      db.collection("users").add({
+        name: name,
+        phone_num: phone,
+        email: email,
+        password: password,
+      });
+      History.push("/");
+    } catch {
+      return setError("Failed to create an account");
+    }
+
+    setLoading(false);
+  };
+
   return (
     <div className="signup">
-      <h1>I am Signup</h1>
+      <div className="signup_container">
+        <h1>Sign Up</h1>
+        <form onSubmit={handleSubmit}>
+          <p>Please fill in this form to create an account.</p>
+          <hr />
+          {error && <p>{error}</p>}
+          <label htmlFor="name">
+            <b>Name</b>
+          </label>
+          <br />
+          <input
+            type="text"
+            placeholder="Enter Full Name"
+            required
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          <br />
+          <label htmlFor="email">
+            <b>Email</b>
+          </label>
+          <br />
+          <input
+            type="email"
+            placeholder="Enter Email"
+            required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <br />
+          <label htmlFor="phone_num">
+            <b>Phone number</b>
+          </label>
+          <br />
+          <input
+            type="number"
+            placeholder="Phone no."
+            required
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+          />
+          <br />
+          <label htmlFor="pasword">
+            <b>Password</b>
+          </label>
+          <br />
+          <input
+            type="password"
+            placeholder="Enter Password"
+            required
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <br />
+          <label htmlFor="confPassword">
+            <b>Repeat Password</b>
+          </label>
+          <br />
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            required
+            value={confPassword}
+            onChange={(e) => setConfPassword(e.target.value)}
+          />
+          <br />
+          <p>
+            Already have an Account? <Link to="/login">Login</Link>
+          </p>
+          <div className="signup_clearfix">
+            <button type="button" className="cancelbtn">
+              Cancel
+            </button>
+            <button disabled={loading} className="signupbtn">
+              Sign Up
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 }
