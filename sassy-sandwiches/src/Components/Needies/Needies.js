@@ -9,10 +9,9 @@ function Needies() {
   useEffect(() => {
     db.collection("users").onSnapshot((snapshot) => {
       setNeedies(
-        snapshot.docs.map((doc) => ({
-          id: doc.id,
-          needy: doc.data(),
-        }))
+        snapshot.docs.map((doc) => {
+          return { id: doc.id, needy: doc.data() };
+        })
       );
     });
   }, []);
@@ -21,16 +20,20 @@ function Needies() {
     <div className="needies">
       <div className="needies_headline">
         <h1>We need Funds!</h1>
-        {needies.map(({ id, needy }) => (
-          <Needy
-            key={id}
-            firm_id={id}
-            amount={needy.amount}
-            need_funds={needy.need_funds}
-            firm_name={needy.firm_name}
-            firm_image={needy.firm_image}
-          />
-        ))}
+        {needies.map(({ id, needy }) => {
+          if (needy.firm_name) {
+            return (
+              <Needy
+                key={id}
+                firm_id={id}
+                amount={needy.amount}
+                need_funds={needy.need_funds}
+                firm_name={needy.firm_name}
+                firm_image={needy.firm_image}
+              />
+            );
+          }
+        })}
       </div>
     </div>
   );

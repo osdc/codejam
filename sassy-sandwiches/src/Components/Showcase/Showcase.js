@@ -28,7 +28,11 @@ function Showcase() {
       <div className="showcase_overlay"></div>
       <div className="showcase_main">
         <h1>Today is your opportunity to build the tomorrow of someone.</h1>
-        {!currentUser && <button onClick={handleSignup}>Get Started</button>}
+        {currentUser ? (
+          <button onClick={handleNeedies}>See the Needies</button>
+        ) : (
+          <button onClick={handleSignup}>Get Started</button>
+        )}
       </div>
       <div className="showcase_needies">
         <h1>We need Funds!</h1>

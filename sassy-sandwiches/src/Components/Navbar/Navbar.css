@@ -16,6 +16,7 @@
 
 .navbar_logo > h1 {
   font-family: "Poppins", sans-serif;
+  cursor: pointer;
 }
 
 .navbar_login_signup {
@@ -36,4 +37,21 @@
   background-color: #fff;
   cursor: pointer;
   width: 100%;
+}
+
+.navbar_logout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar_logout > button {
+  padding: 5px;
+  font-size: 1.1rem;
+  outline: none;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  width: 100%;
+  margin-right: 10px;
 }

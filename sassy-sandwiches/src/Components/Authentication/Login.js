@@ -55,7 +55,7 @@ function Login() {
             onChange={(e) => setPassword(e.target.value)}
           />
           <p>
-            Don't have an Account? <Link to="/signup">Sign Up</Link>
+            <Link to="/forgotPassword">Forgot Password ?</Link>
           </p>
           <div className="login_clearfix">
             <button type="button" className="cancelbtn">

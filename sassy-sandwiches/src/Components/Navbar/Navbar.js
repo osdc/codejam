@@ -1,7 +1,9 @@
 import React from "react";
 import "./Navbar.css";
+import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import { useHistory } from "react-router-dom";
 import { useAuth } from "../../AuthContext";
+import { Button } from "@material-ui/core";
 
 function Navbar() {
   const History = useHistory();
@@ -22,14 +24,32 @@ function Navbar() {
     await logout();
   };
 
+  const handlePersonal = async (e) => {
+    e.preventDefault();
+    History.push("/personal");
+  };
+
+  const handleNeedFunds = (e) => {
+    e.preventDefault();
+    History.push("/needFunds");
+  };
+
   return (
     <div className="navbar">
       <div className="navbar_logo">
-        <h1>FundNeedy</h1>
+        <h1 onClick={() => History.push("/")}>FundNeedy</h1>
       </div>
       <div className="navbar_login_signup">
         {currentUser ? (
-          <button onClick={handleLogout}>Logout</button>
+          <div className="navbar_logout">
+            <button onClick={handleNeedFunds} style={{ width: "200%" }}>
+              Need Funds?
+            </button>
+            <button onClick={handleLogout}>Logout</button>
+            <Button onClick={handlePersonal}>
+              <AccountCircleIcon fontSize="large" />
+            </Button>
+          </div>
         ) : (
           <button onClick={handleLogin}>Login</button>
         )}
