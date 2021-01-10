@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.css";
-import Navbar from "./Navbar";
-import Showcase from "./Showcase";
-import Needies from "./Needies";
-import Footer from "./Footer";
+import Navbar from "./Components/Navbar/Navbar";
+import Showcase from "./Components/Showcase/Showcase";
+import Needies from "./Components/Needies/Needies";
+import Footer from "./Components/Footer/Footer";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import FirmFund from "./FirmFund";
-import Success from "./Success";
+import FirmFund from "./Components/Firm/FirmFund";
+import Success from "./Components/Firm/Success";
 
 function App() {
   return (

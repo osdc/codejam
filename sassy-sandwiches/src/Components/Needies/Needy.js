@@ -2,7 +2,7 @@ import React from "react";
 import "./Needy.css";
 import { useHistory } from "react-router-dom";
 
-function Needy({ firm_name, amount, need_funds }) {
+function Needy({ firm_name, amount, need_funds, firm_image }) {
   const History = useHistory();
   const handleFund = (e) => {
     History.push("/firmname");
@@ -12,10 +12,7 @@ function Needy({ firm_name, amount, need_funds }) {
     <div className="needy">
       <div className="needy_header">
         <h1>{firm_name}</h1>
-        <img
-          src="https://i.pinimg.com/originals/ba/fc/15/bafc1525cef9606c5c064694ca8e60fb.jpg"
-          alt=""
-        />
+        <img src={firm_image} alt="" />
       </div>
       <div className="needy_body">
         <p>{need_funds}</p>

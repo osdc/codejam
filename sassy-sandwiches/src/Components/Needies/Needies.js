@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Needies.css";
 import Needy from "./Needy";
-import { db } from "./firebase";
+import { db } from "../../firebase";
 
 function Needies() {
   const [needies, setNeedies] = useState([]);
@@ -27,6 +27,7 @@ function Needies() {
             amount={needy.amount}
             need_funds={needy.need_funds}
             firm_name={needy.firm_name}
+            firm_image={needy.firm_image}
           />
         ))}
       </div>
