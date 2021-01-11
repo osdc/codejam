@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Needy.css";
 import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
@@ -40,6 +40,11 @@ function Needy({ firm_name, amount, need_funds, firm_image, firm_id }) {
     setOpen(false);
   };
 
+  const truncate = (str) => {
+    str = str.toString();
+    return str.length <= 200 ? str : str.substring(0, 200) + "...";
+  };
+
   return (
     <div className="needy">
       <Modal
@@ -64,7 +69,7 @@ function Needy({ firm_name, amount, need_funds, firm_image, firm_id }) {
         <img src={firm_image} alt="" />
       </div>
       <div className="needy_body">
-        <p>{need_funds}</p>
+        <p>{truncate(need_funds)}</p>
       </div>
       <div className="needy_footer">
         <p>

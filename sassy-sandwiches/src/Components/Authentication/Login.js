@@ -26,6 +26,11 @@ function Login() {
 
     setLoading(false);
   }
+
+  const handleCancel = () => {
+    History.push("/");
+  };
+
   return (
     <div className="login">
       <div className="login_container">
@@ -58,7 +63,7 @@ function Login() {
             <Link to="/forgotPassword">Forgot Password ?</Link>
           </p>
           <div className="login_clearfix">
-            <button type="button" className="cancelbtn">
+            <button onClick={handleCancel} className="cancelbtn">
               Cancel
             </button>
             <button disabled={loading} className="loginbtn">

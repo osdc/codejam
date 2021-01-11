@@ -46,6 +46,10 @@ function Signup() {
     setLoading(false);
   };
 
+  const handleCancel = () => {
+    History.push("/");
+  };
+
   return (
     <div className="signup">
       <div className="signup_container">
@@ -118,7 +122,7 @@ function Signup() {
             Already have an Account? <Link to="/login">Login</Link>
           </p>
           <div className="signup_clearfix">
-            <button type="button" className="cancelbtn">
+            <button type="button" className="cancelbtn" onClick={handleCancel}>
               Cancel
             </button>
             <button disabled={loading} className="signupbtn">
