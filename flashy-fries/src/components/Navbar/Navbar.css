@@ -1,0 +1,25 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f5810a;
+  color: white;
+  padding: 10px 5px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.heading {
+  font-weight: 500;
+  font-size: 27px;
+}
+
+.links a:not(:last-child) {
+  margin-right: 15px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
