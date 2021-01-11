@@ -1,3 +1,6 @@
-This is your team's README.
+Musical chess
 
-Feel free to edit it as per you like.
+Codejam'21
+
+Chess and music two completely different disciplines.
+Their Combination....pure magic.
