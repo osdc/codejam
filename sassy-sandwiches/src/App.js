@@ -13,6 +13,7 @@ import Personal from "./Components/Authentication/Personal";
 import ForgotPassword from "./Components/Authentication/ForgotPassword";
 import PrivateRoute from "./PrivateRoute";
 import NeedFunds from "./Components/Firm/NeedFunds";
+import Notification from "./Components/Firm/Notification";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/signup" component={Signup} />
         <Route path="/needies" component={Needies} />
         <PrivateRoute path="/personal" component={Personal} />
+        <Route path="/notifications" component={Notification} />
         <Route path="/needFunds" component={NeedFunds} />
         <Route path="/forgotPassword" component={ForgotPassword} />
         <Route path="/:firm_id" component={FirmFund} />

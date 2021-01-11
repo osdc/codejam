@@ -14,6 +14,10 @@ export function AuthProvider({ children }) {
     return auth.createUserWithEmailAndPassword(email, password);
   }
 
+  function emailVerif(email) {
+    return auth.sendSignInLinkToEmail(email);
+  }
+
   function login(email, password) {
     return auth.signInWithEmailAndPassword(email, password);
   }
@@ -48,6 +52,7 @@ export function AuthProvider({ children }) {
     resetPassword,
     updateEmail,
     updatePassword,
+    emailVerif,
   };
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;

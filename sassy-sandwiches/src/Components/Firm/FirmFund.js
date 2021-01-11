@@ -5,7 +5,9 @@ import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
 import { useHistory } from "react-router-dom";
-import { db } from "../../firebase";
+import { db, auth } from "../../firebase";
+import { useAuth } from "../../AuthContext";
+import firebase from "firebase";
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -34,6 +36,10 @@ function FirmFund() {
   const [need_funds, setNeed_funds] = useState("");
   const [amount, setAmount] = useState(0);
   const [filled_amount, setFilled_amount] = useState("");
+  const [people_contributed, setPeople_contributed] = useState([]);
+  const [contri_data, setContri_data] = useState({});
+
+  const { currentUser } = useAuth();
 
   useEffect(() => {
     db.collection("users")
@@ -46,6 +52,7 @@ function FirmFund() {
           setNeed_funds(doc.data().need_funds);
           setFirm_name(doc.data().firm_name);
           setAmount(doc.data().amount);
+          setPeople_contributed(doc.data().people_contributed);
         } else {
           console.log("No such firm!");
         }
@@ -62,13 +69,29 @@ function FirmFund() {
   const handleOpen = (e) => {
     e.preventDefault();
     setOpen(true);
+    db.collection("users")
+      .doc(auth.currentUser.uid)
+      .get()
+      .then((doc) => {
+        setContri_data(doc.data());
+      });
   };
 
   const handleClose = () => {
     setOpen(false);
     db.collection("users")
       .doc(id)
-      .update({ amount: amount - filled_amount });
+      .update({
+        timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+        amount: amount - filled_amount,
+        people_contributed: [
+          ...people_contributed,
+          {
+            contri_data: contri_data,
+            contri_amount: filled_amount,
+          },
+        ],
+      });
     setFilled_amount("");
   };
 

@@ -1,6 +1,8 @@
 import React from "react";
 import "./Navbar.css";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
+import NotificationsIcon from "@material-ui/icons/Notifications";
+import NotificationsActiveIcon from "@material-ui/icons/NotificationsActive";
 import { useHistory } from "react-router-dom";
 import { useAuth } from "../../AuthContext";
 import { Button } from "@material-ui/core";
@@ -36,6 +38,11 @@ function Navbar() {
     History.push("/needFunds");
   };
 
+  const handleNotification = (e) => {
+    e.preventDefault();
+    History.push("/notifications");
+  };
+
   return (
     <div className="navbar">
       <div className="navbar_logo">
@@ -50,6 +57,9 @@ function Navbar() {
             <button onClick={handleLogout}>Logout</button>
             <Button onClick={handlePersonal}>
               <AccountCircleIcon fontSize="large" />
+            </Button>
+            <Button onClick={handleNotification}>
+              <NotificationsIcon fontSize="large" />
             </Button>
           </div>
         ) : (

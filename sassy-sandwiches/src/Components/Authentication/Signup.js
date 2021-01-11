@@ -11,8 +11,9 @@ function Signup() {
   const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
   const [confPassword, setConfPassword] = useState("");
+  const [people_contributed, setPeople_Contributed] = useState([]);
 
-  const { signup } = useAuth();
+  const { signup, emailVerif } = useAuth();
   const History = useHistory();
 
   const [error, setError] = useState("");
@@ -36,6 +37,7 @@ function Signup() {
           name: name,
           phone_num: phone,
           password: password,
+          people_contributed: people_contributed,
         });
       });
       History.push("/");
