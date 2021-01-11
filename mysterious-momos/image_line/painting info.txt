@@ -1,0 +1,11 @@
+1. mona lisa
+math: golden ratio
+ratio: 1200*1788
+
+2.leda atomica
+math: polygon geometry
+ratio: 1120*1503
+
+3.TheMusicLessor
+math: perspective/foreshortening
+ratio: 4440*5089
