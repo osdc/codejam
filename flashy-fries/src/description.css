@@ -1,0 +1,21 @@
+img {display: inline;
+    border-radius: 50%;
+    width: 200px;
+  }
+  .descr
+  {
+    border: 1px solid black ;
+  }
+  .description
+  {
+      display: grid;
+      grid-template-columns: 0.05fr 1fr;
+     
+     }
+     .graphics
+     {height: 200px;
+        margin: 100px;
+        padding: 100px;
+        border: 1px solid black ;
+        text-align: center;
+     }
