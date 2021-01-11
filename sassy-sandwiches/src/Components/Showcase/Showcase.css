@@ -99,3 +99,9 @@
   outline: none;
   cursor: pointer;
 }
+
+.showcase_carousel {
+  width: 80%;
+  padding: 50px;
+  margin: auto;
+}
