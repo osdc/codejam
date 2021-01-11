@@ -26,6 +26,10 @@ function Signup() {
       return setError("Passwords do not match");
     }
 
+    if (password.length < 6) {
+      return setError("Password length must be atleast 6");
+    }
+
     try {
       setLoading(true);
       var promise = signup(email, password);
@@ -102,7 +106,7 @@ function Signup() {
           <br />
           <input
             type="password"
-            placeholder="Enter Password"
+            placeholder="Enter Password (atleast 6 chars)"
             required
             value={password}
             onChange={(e) => setPassword(e.target.value)}
