@@ -7,13 +7,15 @@ function Needies() {
   const [needies, setNeedies] = useState([]);
 
   useEffect(() => {
-    db.collection("users").onSnapshot((snapshot) => {
-      setNeedies(
-        snapshot.docs.map((doc) => {
-          return { id: doc.id, needy: doc.data() };
-        })
-      );
-    });
+    db.collection("users")
+      .orderBy("timestamp", "desc")
+      .onSnapshot((snapshot) => {
+        setNeedies(
+          snapshot.docs.map((doc) => {
+            return { id: doc.id, needy: doc.data() };
+          })
+        );
+      });
   }, []);
 
   return (

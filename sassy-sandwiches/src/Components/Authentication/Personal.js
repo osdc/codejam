@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import "./Signup.css";
 import { Link, useHistory } from "react-router-dom";
 import { useAuth } from "../../AuthContext";
-import { db } from "../../firebase";
+import { db, auth } from "../../firebase";
 
 function Personal() {
   const [email, setEmail] = useState("");
@@ -28,15 +28,30 @@ function Personal() {
     const promises = [];
     if (email !== currentUser.email && email !== "") {
       promises.push(updateEmail(email));
+      db.collection("users").doc(auth.currentUser.uid).update({
+        email: email,
+      });
     }
     if (password !== currentUser.password && password !== "") {
       promises.push(updatePassword(password));
+      db.collection("users").doc(auth.currentUser.uid).update({
+        password: password,
+      });
+    }
+    if (name !== "") {
+      db.collection("users").doc(auth.currentUser.uid).update({
+        name: name,
+      });
+    }
+    if (phone !== "") {
+      db.collection("users").doc(auth.currentUser.uid).update({
+        phone_num: phone,
+      });
     }
 
     Promise.all(promises)
       .then(() => {
-        console.log(db.collection("users").doc(currentUser.email));
-
+        alert("Details updated successfully!");
         History.push("/");
       })
       .catch((err) => {

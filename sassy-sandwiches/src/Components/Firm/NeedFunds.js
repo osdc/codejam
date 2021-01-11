@@ -1,27 +1,19 @@
 import React, { useState, useEffect } from "react";
 import "./NeedFunds.css";
-import { db, storage } from "../../firebase";
+import firebase from "firebase";
+import { db, storage, auth } from "../../firebase";
 import { useAuth } from "../../AuthContext";
+import { useHistory } from "react-router-dom";
 
 function NeedFunds() {
-  const [firmName, setFirmName] = useState();
-  const [firmImage, setFirmImage] = useState();
-  const [aboutFirm, setAboutFirm] = useState();
-  const [needFunds, setNeedFunds] = useState();
-  const [amount, setAmount] = useState();
-  const [needies, setNeedies] = useState([]);
-  const [id, setId] = useState();
-  const { currentUser } = useAuth();
+  const [firmName, setFirmName] = useState("");
+  const [firmImage, setFirmImage] = useState("");
+  const [aboutFirm, setAboutFirm] = useState("");
+  const [needFunds, setNeedFunds] = useState("");
+  const [progress, setProgress] = useState(0);
+  const [amount, setAmount] = useState("");
 
-  useEffect(() => {
-    db.collection("users").onSnapshot((snapshot) => {
-      setNeedies(
-        snapshot.docs.map((doc) => {
-          return { id: doc.id, needy: doc.data() };
-        })
-      );
-    });
-  }, []);
+  const History = useHistory();
 
   const handleChange = (e) => {
     if (e.target.files[0]) {
@@ -31,13 +23,7 @@ function NeedFunds() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    for (var i = 0; i < needies.length; ++i) {
-      if (needies[i].needy.email === currentUser.email) {
-        setId(needies[i].id);
-        break;
-      }
-    }
+    console.log(auth.currentUser.uid);
 
     const uploadTask = storage.ref(`images/${firmImage.name}`).put(firmImage);
     uploadTask.on(
@@ -46,31 +32,30 @@ function NeedFunds() {
         const progress = Math.round(
           (snapshot.bytesTransferred / snapshot.totalBytes) * 100
         );
+        setProgress(progress);
       },
       (err) => {
         console.log(err);
         alert(err.message);
       },
       () => {
-        console.log(firmImage.name);
         storage
           .ref("images")
           .child(firmImage.name)
           .getDownloadURL()
           .then((url) => {
-            db.collection("users").doc(id).update({
+            db.collection("users").doc(auth.currentUser.uid).update({
+              timestamp: firebase.firestore.FieldValue.serverTimestamp(),
               firm_name: firmName,
               firm_image: url,
               about_firm: aboutFirm,
               need_funds: needFunds,
               amount: amount,
             });
+            History.push("/needies");
           });
       }
     );
-
-    console.log(needies);
-    console.log(firmImage);
   };
 
   return (
@@ -130,6 +115,7 @@ function NeedFunds() {
             onChange={(e) => setAmount(e.target.value)}
           />{" "}
           <br />
+          <progress value={progress} max="100" />
           <button>Request for Funds!</button>
         </form>
       </div>

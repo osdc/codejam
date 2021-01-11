@@ -3,7 +3,7 @@ import "./Signup.css";
 import { Link, useHistory } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 import { useAuth } from "../../AuthContext";
-import { db } from "../../firebase";
+import { db, auth } from "../../firebase";
 
 function Signup() {
   const [email, setEmail] = useState("");
@@ -27,13 +27,16 @@ function Signup() {
 
     try {
       setLoading(true);
-      await signup(email, password);
-      db.collection("users").add({
-        id: uuidv4(),
-        name: name,
-        phone_num: phone,
-        email: email,
-        password: password,
+      var promise = signup(email, password);
+      promise.then(() => {
+        var userUid = auth.currentUser.uid;
+
+        db.collection("users").doc(userUid).set({
+          email: email,
+          name: name,
+          phone_num: phone,
+          password: password,
+        });
       });
       History.push("/");
     } catch {
