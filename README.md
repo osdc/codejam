@@ -53,34 +53,36 @@ This is something you might be asking yourself. A Code Jam is a chance to create
 
 You can either use [Method 1](#method-1) or [Method 2](#method-2) to submit your project.
 
-### Method 1
+### Method 1: Through a PR
 
-##### 1. Fork this repository
+#### 1. Fork this repository
 Start by [forking this repository](https://github.com/osdc/codejam-21/fork). Only one team member needs to do this, the other members can fork that person's fork and work on it.
 
-##### 2. Find your team folder in the repository
+#### 2. Find your team folder in the repository
 The repository should already contain a subdirectory named after your team. _All your project files must be contained within your team's subdirectory only_. If you make any changes to files other than those in your team folder, we will not be able to merge your PR.
 
 If you're using a CI/CD workflow, and require configuration files/folders in the root of the repository, either try to use a unique name (e.g. prefix the configuration files with your team name) or remove the files/directories just before the final submission.
 
-##### 3. Create a pull request
+#### 3. Create a Pull Request
 Only one team member has to do this (The same one who forked this repo directly).<br>
 Open a pull request from your fork's `main` to the `main` branch of this repository in order to submit your project. You should use the name of your team as the title of the Pull Request. Please open your Pull Request at the start of the Jam (see the next step for clarification).<br>
 **Avoid opening spam PRs to the repo, and there should be only one PR from each team.**
 
-##### 4. Keep pushing to your main branch
+#### 4. Keep pushing to your main branch
 The Pull Request you created will keep getting updated automatically whenever you push code to `main` branch on your fork, so you can create the PR whenever you want, and you only have to do it once. You do not need to wait until the very end of the Jam to make the PR and risk missing the deadline. Just keep pushing code to your `main` branch as you keep progressing, and do your best to finish before the Jam ends!<br>
 When working as a team, you should consider learning about feature branches so that you don't all work directly on the `main` branch and cause each other a bunch of conflicts. For a short explanation of how this works, [see this video](https://www.youtube.com/watch?v=j7YDbrS9I48).
 
 ### Method 2: Using git submodules
 
-If you have already started a work in your personal repositories then you can use git submodules to submit your project.
+If you have already made a separate repository for your project, you can use git submodules to submit your project.
 
 #### 1. Fork this repository
+
 Start by [forking this repository](https://github.com/osdc/codejam-21/fork).
 
 #### 2. Edit the `.gitmodules` file
-And add
+
+Add the following to the file (make the required changes in `path`, `url`):
 
 ``` git-config
 [submodule "<your team name>"]
@@ -88,8 +90,10 @@ And add
 	url = <path to your project>
 ```
 
-#### 3. Commit the changes and create a pull request
-You don't need to manually update submodules for every change. [dependabot](https://dependabot.com/submodules/) will automatically do that for you.
+#### 3. Commit the changes and create a Pull Request
+
+Commit the `.gitmodules` file and open a PR to the `main` branch of this repository.
+You don't need to manually update submodules for every change, [dependabot](https://dependabot.com/submodules/) will automatically do that for you. So, you can just make this PR once.
 
 ## Rules
 
