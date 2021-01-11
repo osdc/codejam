@@ -4,6 +4,7 @@ import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import { useHistory } from "react-router-dom";
 import { useAuth } from "../../AuthContext";
 import { Button } from "@material-ui/core";
+import { auth } from "../../firebase";
 
 function Navbar() {
   const History = useHistory();
@@ -26,6 +27,7 @@ function Navbar() {
 
   const handlePersonal = async (e) => {
     e.preventDefault();
+    alert("Login again to edit details!");
     History.push("/personal");
   };
 

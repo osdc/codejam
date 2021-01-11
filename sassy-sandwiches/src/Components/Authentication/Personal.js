@@ -1,6 +1,7 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import "./Signup.css";
 import { Link, useHistory } from "react-router-dom";
+import firebase from "firebase";
 import { useAuth } from "../../AuthContext";
 import { db, auth } from "../../firebase";
 
@@ -10,6 +11,18 @@ function Personal() {
   const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
   const [confPassword, setConfPassword] = useState("");
+
+  useEffect(() => {
+    db.collection("users")
+      .doc(auth.currentUser.uid)
+      .get()
+      .then((user) => {
+        setEmail(user.data().email);
+        setName(user.data().name);
+        setPhone(user.data().phone_num);
+        setPassword(user.data().password);
+      });
+  }, []);
 
   const { updatePassword, updateEmail, currentUser } = useAuth();
   const History = useHistory();
@@ -55,7 +68,14 @@ function Personal() {
         History.push("/");
       })
       .catch((err) => {
-        console.log("Failed to update Details: ", err);
+        if (err.code === "auth/requires-recent-login" || err.code === 400) {
+          firebase
+            .auth()
+            .signOut()
+            .then(function () {
+              alert("Please log in again to update your account.");
+            });
+        }
       })
       .finally(() => {
         setLoading(false);
@@ -77,7 +97,6 @@ function Personal() {
           <input
             type="text"
             placeholder="Enter New Name"
-            required
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
@@ -89,7 +108,6 @@ function Personal() {
           <input
             type="email"
             placeholder="Enter New Email"
-            required
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
@@ -101,7 +119,6 @@ function Personal() {
           <input
             type="number"
             placeholder="Phone no."
-            required
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
           />
@@ -113,7 +130,6 @@ function Personal() {
           <input
             type="password"
             placeholder="Enter Password"
-            required
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
@@ -125,7 +141,6 @@ function Personal() {
           <input
             type="password"
             placeholder="Confirm Password"
-            required
             value={confPassword}
             onChange={(e) => setConfPassword(e.target.value)}
           />
