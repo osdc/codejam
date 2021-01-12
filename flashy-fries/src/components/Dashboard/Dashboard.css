@@ -6,9 +6,10 @@ body
 }
 .heading
 {
+    color: #d0acff;
     text-align: center;
     font-size: 70px;;
-    background-color: aqua;
+    background-color: #57239b;
     border-radius: 50px;
     font-family: 'Yusei Magic', sans-serif;
 }
@@ -16,7 +17,6 @@ body
 {
    
     font-size: 40px;;
-    
     display:inline;
     border-radius: 5px;
     font-family: 'Fraunces', serif;
@@ -42,19 +42,20 @@ body
     width: 0;
   }
   .checkmark {
+    background-color:#dabeff;
     position: absolute;
     top: 0;
     left: 5px;
     height: 25px;
     width: 25px;
-    background-color:rgb(173, 245, 245);
+    background-color: #bc8cfc);
    
   }
   .container:hover input ~ .checkmark {
-    background-color: #ccc;
+    background-color: #bb88ff;
   }
   .container input:checked ~ .checkmark {
-    background-color: #2196F3;
+    background-color: #612aa8;
   }
   .checkmark:after {
     content: "";
@@ -77,19 +78,20 @@ body
   }
 .btn
 {
-    background: #0066A2;
+
+    background:#5d29a1;
 
 color: white;
 
 border-style: outset;
 
-border-color: #0066A2;
+border-color:#522d83;
 
 height: 50px;
 
 width: 100px;
 
-font: bold 15px arial, sans-serif;
+font: bold px arial, sans-serif;
 
 text-shadow:none;
 }
