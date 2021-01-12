@@ -18,6 +18,6 @@ This is how Study Date™ works:
 * Our backend matches you with someone who wants to study the same topic and initiates a video call for you with them.
 * After you are done studying on video call, you can obtain your reward (cute cat photos) for completing the Study Date™.
 ______
-Since we're *combining opposites*, we have used the widely hated and ridiculed Comic Sans MS font, for *designing* our logo, because why not :D.
+Since we're *combining opposites*, we have used the widely hated and ridiculed Comic Sans MS font for *designing* our logo, because why not :smiley:.
 
 
