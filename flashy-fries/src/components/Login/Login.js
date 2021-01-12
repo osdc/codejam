@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useHistory } from "react-router-dom";
+import user from "./user.png"
 
 import { useAuth } from "../AuthContext";
 import "./Login.css";
@@ -28,7 +29,7 @@ const Login = () => {
   return (
     <div className="form">
       <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC1ueC3iCmaW5la1MI4pF2AY2Yp20Utb6bwQ&usqp=CAU"
+        src={user}
         alt="sign up"
       />
       <form onSubmit={handleSubmit(onSubmit)}>
