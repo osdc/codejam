@@ -1,14 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "./Notification.css";
-import { useAuth } from "../../AuthContext";
 import { auth, db } from "../../firebase";
 import firebase from "firebase";
 
 function Notification() {
   const [people_contributed, setPeopleContributed] = useState([]);
-  const [copy, setCopy] = useState([]);
-  const [render, setRender] = useState(false);
-  const [cnt, setCnt] = useState(0);
+  const [displayArr, setDisplayArr] = useState([]);
   const [input, setInput] = useState("");
 
   useEffect(() => {
@@ -18,8 +15,10 @@ function Notification() {
           .doc(auth.currentUser.uid)
           .get()
           .then((doc) => {
-            setPeopleContributed(doc.data().people_contributed.reverse());
-            setCopy(people_contributed);
+            if (doc.data().people_contributed.length > 0) {
+              setPeopleContributed(doc.data().people_contributed.reverse());
+              setDisplayArr(doc.data().people_contributed.reverse());
+            }
           });
       } else {
         console.log("No user!");
@@ -27,25 +26,47 @@ function Notification() {
     });
   }, []);
 
+  const handleChange = (e) => {
+    e.preventDefault();
+    var new_input = e.target.value;
+
+    setInput(new_input);
+
+    setDisplayArr(
+      people_contributed.filter((person) => {
+        return (
+          person.contri_data.name
+            .toLowerCase()
+            .indexOf(new_input.toLowerCase()) !== -1
+        );
+      })
+    );
+  };
+
   return (
     <div className="notification">
-      <h1>{people_contributed.length} People who helped you 👍 </h1>
-
-      {people_contributed.map((person) => {
+      <h1>{displayArr.length} People who helped you 👍 </h1>
+      <input
+        type="text"
+        placeholder="Search here..."
+        value={input}
+        onChange={handleChange}
+      />
+      {displayArr.map((person) => {
         return (
-          <div className="notification_person">
-            <p>
+          <div className="notification_person" key={person.id}>
+            <div>
               <strong>Contributer Name: </strong>
               <p>{person.contri_data.name}</p>
-            </p>
-            <p>
+            </div>
+            <div>
               <strong>Contributer Email: </strong>
               <p>{person.contri_data.email}</p>
-            </p>
-            <p>
+            </div>
+            <div>
               <strong>Amount Contributed: </strong>
               <p>${person.contri_amount}</p>
-            </p>
+            </div>
           </div>
         );
       })}

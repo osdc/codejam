@@ -1,5 +1,18 @@
 .notification {
   padding: 50px;
+  text-align: center;
+}
+
+.notification > input[type="text"] {
+  width: 20%;
+  margin: auto;
+  margin-bottom: 50px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 30px;
+  border: 1px solid #02a95c;
+  outline: none;
+  font-size: 1.2rem;
 }
 
 .notification > h1 {
@@ -18,15 +31,22 @@
   -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.75);
+  border: 5px solid lightyellow;
 }
 
-.notification_person > p {
+.notification_person > div {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   line-height: 2;
   font-size: 1.5rem;
 }
 
-.notification_person > p > strong {
+.notification_person > div > strong {
   font-size: 1.5rem;
+  color: #02a95c;
+}
+
+.notification_person > div > p {
+  font-weight: 700;
 }

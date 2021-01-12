@@ -69,7 +69,7 @@ function Needy({ firm_name, amount, need_funds, firm_image, firm_id }) {
         <img src={firm_image} alt="" />
       </div>
       <div className="needy_body">
-        <p>{truncate(need_funds)}</p>
+        <p style={{ textAlign: "left" }}>{truncate(need_funds)}</p>
       </div>
       <div className="needy_footer">
         <p>

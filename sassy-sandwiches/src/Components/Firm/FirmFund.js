@@ -8,6 +8,7 @@ import { useHistory } from "react-router-dom";
 import { db, auth } from "../../firebase";
 import { useAuth } from "../../AuthContext";
 import firebase from "firebase";
+import { v4 as uuidv4 } from "uuid";
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -89,6 +90,7 @@ function FirmFund() {
           {
             contri_data: contri_data,
             contri_amount: filled_amount,
+            id: uuidv4(),
           },
         ],
       });
