@@ -1,4 +1,5 @@
 import "./Homepage.css";
+import logo from "./logo2.png";
 
 function Homepage() {
   return (
@@ -6,7 +7,7 @@ function Homepage() {
       <div className="description">
         <div>
           <img
-            src="https://img.etimg.com/thumb/width-640,height-480,imgsize-37560,resizemode-1,msid-65449681/wealth/spend/whats-the-cost-of-studying-in-popular-foreign-countries/education2-getty-images.jpg"
+            src={logo}
             alt="logo"
           />
         </div>
