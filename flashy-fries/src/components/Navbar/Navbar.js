@@ -4,9 +4,9 @@ import "./Navbar.css";
 function Navbar() {
   return (
     <div className="navbar">
-      <div className="heading">Study Date</div>
+      <Link to="/">Study Date</Link>
       <div className="links">
-        <Link to="/login">Login</Link>
+        <Link to="/login">Log</Link>
         <Link to="/signup">Signup</Link>
       </div>
     </div>
