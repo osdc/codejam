@@ -6,20 +6,20 @@ const Login = () => {
       <form action="null">
        
         <div>
-          EMAIL ID:<input type="email" name="MYEMAIL"/>
+          Email-ID: <input type="email" name="MYEMAIL"/>
         </div>
         <div>
-          Password:<input type="password" name="MYPASSWORD"/>
+          Password: <input type="password" name="MYPASSWORD"/>
         </div>
         <div className="submit">
-          <input type="Submit" value="Login As A Teacher"/>
+          <input type="Submit" value="Login as a Teacher"/>
         </div>
         <div className="submit">
-          <input type="Submit" value="Login As A Student"/>
+          <input type="Submit" value="Login as a Student"/>
         </div>
         <div >
-          <input type="reset" value="RESET"/>
-          <input  type="Submit" value="Forget Password ?"/>
+          <input type="reset" value="Reset Fields"/>
+          <input  type="Submit" value="Forgot Password"/>
         </div>
       </form>
     </div>
