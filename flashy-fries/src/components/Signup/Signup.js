@@ -27,7 +27,7 @@ const Signup = () => {
   };
 
   return (
-    <div className="form">
+    <div className="form" className="login">
       <img
         src={user}
         alt="sign up"
@@ -78,7 +78,7 @@ const Signup = () => {
             <option value="teacher">Teacher</option>
           </select>
         </div>
-        <button type="submit" disabled={loading}>
+        <button type="submit" disabled={loading}class="btn btn-primary btn-block btn-large">
           Signup
         </button>
       </form>
