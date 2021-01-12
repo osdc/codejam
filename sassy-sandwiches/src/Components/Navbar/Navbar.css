@@ -56,14 +56,122 @@
   margin-right: 10px;
 }
 
-/* .navbar_sidebar {
-  
+.navbar_sidebar {
+  display: none;
   width: 200px;
   height: 100%;
-} */
+}
+
+.navbar_sidebar_button {
+  display: none;
+  width: 30px;
+  height: 50px;
+  padding: 10px 0;
+  top: 0;
+  left: 0;
+  position: relative;
+  cursor: pointer;
+}
 
 @media (max-width: 900px) {
   .navbar {
     justify-content: space-between;
+  }
+}
+
+@media (max-width: 700px) {
+  .navbar_sidebar_button {
+    display: inline-block;
+  }
+
+  .navbar_sidebar_button > span,
+  .navbar_sidebar_button > span:before,
+  .navbar_sidebar_button > span:after {
+    width: 30px;
+    height: 2px;
+    background: #333333;
+    position: absolute;
+    transition: width 0.3s ease-in-out;
+  }
+
+  .navbar_sidebar_button > span {
+    top: 50%;
+  }
+
+  .navbar_sidebar_button > span:before {
+    content: "";
+    top: -10px;
+  }
+
+  .navbar_sidebar_button > span:after {
+    content: "";
+    top: 10px;
+  }
+
+  .navbar_sidebar_button.onclick span {
+    background: none;
+  }
+
+  .navbar_sidebar_button.onclick span:before {
+    transform: translateY(10px) rotate(45deg);
+  }
+
+  .navbar_sidebar_button.onclick span:after {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+
+  .navbar_sidebar {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 10000;
+    width: 60%;
+    max-width: 350px;
+  }
+
+  .navbar_sidebar.open {
+  }
+
+  .navbar_sidebar > ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .navbar_sidebar > ul > li {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .navbar_sidebar > ul > li > button {
+    padding: 5px;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    width: 100%;
+    margin-right: 10px;
+  }
+
+  .navbar_sidebar > button {
+    padding: 5px;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    width: 100%;
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+
+  .navbar_login_signup {
+    display: none;
   }
 }

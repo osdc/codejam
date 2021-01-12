@@ -13,11 +13,6 @@ function Showcase() {
     History.push("/needies");
   };
 
-  const handleLogin = (e) => {
-    e.preventDefault();
-    History.push("/login");
-  };
-
   const handleSignup = (e) => {
     e.preventDefault();
     History.push("/signup");

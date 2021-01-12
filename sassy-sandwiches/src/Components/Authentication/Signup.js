@@ -1,7 +1,6 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import "./Signup.css";
 import { Link, useHistory } from "react-router-dom";
-import { v4 as uuidv4 } from "uuid";
 import { useAuth } from "../../AuthContext";
 import { db, auth } from "../../firebase";
 
@@ -13,7 +12,7 @@ function Signup() {
   const [confPassword, setConfPassword] = useState("");
   const [people_contributed, setPeople_Contributed] = useState([]);
 
-  const { signup, emailVerif } = useAuth();
+  const { signup } = useAuth();
   const History = useHistory();
 
   const [error, setError] = useState("");

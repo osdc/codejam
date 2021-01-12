@@ -4,9 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
-import { useHistory } from "react-router-dom";
 import { db, auth } from "../../firebase";
-import { useAuth } from "../../AuthContext";
 import firebase from "firebase";
 import { v4 as uuidv4 } from "uuid";
 
@@ -39,8 +37,6 @@ function FirmFund() {
   const [filled_amount, setFilled_amount] = useState("");
   const [people_contributed, setPeople_contributed] = useState([]);
   const [contri_data, setContri_data] = useState({});
-
-  const { currentUser } = useAuth();
 
   useEffect(() => {
     db.collection("users")

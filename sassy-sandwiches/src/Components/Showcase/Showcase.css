@@ -142,6 +142,12 @@
   }
 }
 
+@media (max-width: 700px) {
+  .showcase_overlay {
+    min-height: 560px;
+  }
+}
+
 @media (max-width: 415px) {
   .showcase_main {
     background-size: cover;
@@ -164,7 +170,7 @@
   }
 
   .showcase_overlay {
-    min-height: 240px;
+    min-height: 360px;
   }
 
   .showcase_needies {

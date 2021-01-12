@@ -4,7 +4,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Showcase from "./Components/Showcase/Showcase";
 import Needies from "./Components/Needies/Needies";
 import Footer from "./Components/Footer/Footer";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import FirmFund from "./Components/Firm/FirmFund";
 import { AuthProvider } from "./AuthContext";
 import Login from "./Components/Authentication/Login";

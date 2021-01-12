@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./NeedFunds.css";
 import firebase from "firebase";
 import { db, storage, auth } from "../../firebase";
-import { useAuth } from "../../AuthContext";
 import { useHistory } from "react-router-dom";
 
 function NeedFunds() {
