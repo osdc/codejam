@@ -78,3 +78,101 @@
   margin-top: 10px;
   padding: 20px;
 }
+
+@media (max-width: 1100px) {
+  .needFunds {
+    padding: 30px;
+    width: 80%;
+    margin: auto;
+  }
+
+  .needFunds_main {
+    border-radius: 10px;
+    padding: 30px;
+  }
+
+  .needFunds_main > form > input[type="text"] {
+    margin-top: 10px;
+  }
+
+  .needFunds_main > form > input[type="number"] {
+    width: 99%;
+    font-size: 1.2rem;
+    padding: 5px;
+    margin-top: 10px;
+  }
+
+  .needFunds_main > form > textarea {
+    width: 99%;
+    height: 200px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  .needFunds_main > form > label {
+    margin-bottom: 5px;
+  }
+
+  .needFunds_main > form > label > b {
+    font-size: 1.5rem;
+  }
+
+  .needFunds_main_flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .needFunds_main > form > button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 415px) {
+  .needFunds {
+    padding: 0;
+    width: 100%;
+    margin: auto;
+  }
+
+  .needFunds_main {
+    border-radius: 0px;
+    padding: 30px;
+  }
+
+  .needFunds_main > form > input[type="text"] {
+    margin-top: 10px;
+  }
+
+  .needFunds_main > form > input[type="number"] {
+    width: 99%;
+    font-size: 1.2rem;
+    padding: 5px;
+    margin-top: 10px;
+  }
+
+  .needFunds_main > form > textarea {
+    width: 99%;
+    height: 200px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  .needFunds_main > form > label {
+    margin-bottom: 5px;
+  }
+
+  .needFunds_main > form > label > b {
+    font-size: 1.5rem;
+  }
+
+  .needFunds_main_flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .needFunds_main > form > button {
+    width: 100%;
+  }
+}

@@ -91,3 +91,31 @@ hr {
     width: 100%;
   }
 }
+
+@media (max-width: 1000px) {
+  .signup_container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .signup {
+    padding: 30px;
+  }
+  .signup_container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 415px) {
+  .signup {
+    padding: 0px;
+  }
+  .signup_container {
+    width: 90%;
+    border-radius: 0;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}

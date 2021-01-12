@@ -48,6 +48,46 @@ function Navbar() {
       <div className="navbar_logo">
         <h1 onClick={() => History.push("/")}>FundNeedy</h1>
       </div>
+      {/* <div className="navbar_sidebar">
+        <div className="navbar_sidebar_spans">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        {currentUser ? (
+          <ul>
+            <li>
+              <button onClick={handleNeedFunds} style={{ width: "200%" }}>
+                Need Funds?
+              </button>
+            </li>
+            <li>
+              <button onClick={handleLogout}>Logout</button>
+            </li>
+            <li>
+              <Button onClick={handlePersonal}>
+                <AccountCircleIcon fontSize="large" />
+              </Button>
+            </li>
+            <li>
+              <Button onClick={handleNotification}>
+                <NotificationsIcon fontSize="large" />
+              </Button>
+            </li>
+          </ul>
+        ) : (
+          <ul>
+            <li>
+              <button onClick={handleLogin}>Login</button>
+            </li>
+            <li>
+              {" "}
+              {!currentUser && <button onClick={handleSignup}>Signup</button>}
+            </li>
+          </ul>
+        )}
+      </div> */}
       <div className="navbar_login_signup">
         {currentUser ? (
           <div className="navbar_logout">

@@ -7,6 +7,9 @@
   border-radius: 10px;
   padding: 25px;
   width: 50%;
+  display: grid;
+  height: 50vh;
+  place-items: center;
   margin: auto;
   -webkit-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.75);
@@ -95,10 +98,22 @@ hr {
   display: table;
 }
 
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-  .cancelbtn,
-  .signupbtn {
-    width: 100%;
+@media (max-width: 415px) {
+  .login {
+    padding: 10px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+
+  .login_container {
+    width: 80%;
+    padding: 30px;
+    border-radius: 0;
+  }
+
+  .login_container > h1 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
   }
 }

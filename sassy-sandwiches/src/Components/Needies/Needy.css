@@ -1,5 +1,5 @@
 .needy {
-  width: 40%;
+  width: 50%;
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
@@ -49,4 +49,33 @@
   padding: 5px;
   border: 1px solid #02a95c;
   cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .needy {
+    width: 70%;
+  }
+}
+
+@media (max-width: 415px) {
+  .needy {
+    width: 75%;
+  }
+
+  .needy_footer > p {
+    font-size: 1rem;
+  }
+
+  .needy_footer > button {
+    font-size: 1rem;
+    width: 30%;
+    border-radius: 30px;
+    outline: none;
+    background-color: #02a95c;
+    color: #fff;
+    font-weight: 700;
+    padding: 5px;
+    border: 1px solid #02a95c;
+    cursor: pointer;
+  }
 }

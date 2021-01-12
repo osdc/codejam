@@ -55,3 +55,15 @@
   width: 100%;
   margin-right: 10px;
 }
+
+/* .navbar_sidebar {
+  
+  width: 200px;
+  height: 100%;
+} */
+
+@media (max-width: 900px) {
+  .navbar {
+    justify-content: space-between;
+  }
+}

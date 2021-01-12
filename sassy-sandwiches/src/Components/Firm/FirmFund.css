@@ -84,3 +84,126 @@
   border: 1px solid #02a95c;
   cursor: pointer;
 }
+
+@media (max-width: 900px) {
+  .firmFund {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .firmFund_image > img {
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+  }
+
+  .firmFund_about > h2 {
+    font-size: 2rem;
+    margin-top: 40px;
+  }
+
+  .firmFund_about > p {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .firmFund_need > h2 {
+    font-size: 2rem;
+    margin-top: 50px;
+  }
+
+  .firmFund_need > p {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .firmFund_fund > h2 {
+    font-size: 2rem;
+  }
+
+  .firmFund_fund > form > input[type="number"] {
+    width: 30%;
+  }
+
+  .firmFund_fund > form > button {
+    width: 30%;
+    color: #fff;
+    font-weight: 700;
+    padding: 6px;
+  }
+}
+
+@media (max-width: 415px) {
+  .firmFund {
+    text-align: left;
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 0;
+  }
+
+  .firmFund_image > img {
+    height: 200px;
+    width: 80%;
+    border-radius: 10px;
+  }
+
+  .firmFund_about > h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+
+  .firmFund_about > p {
+    width: 100%;
+    margin: auto;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 2;
+  }
+
+  .firmFund_need > h2 {
+    font-size: 2rem;
+    margin-top: 50px;
+  }
+
+  .firmFund_need > p {
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  .firmFund_fund > h2 {
+    font-size: 2rem;
+    margin-top: 50px;
+  }
+
+  .firmFund_fund > form {
+    display: inline-block;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  .firmFund_fund > form > input[type="number"] {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .firmFund_fund > form > button {
+    font-size: 1.2rem;
+    width: 100%;
+    border-radius: 20px;
+  }
+}

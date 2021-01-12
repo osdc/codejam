@@ -149,7 +149,7 @@ function Personal() {
             <Link to="/">Cancel</Link>
           </p>
           <div className="signup_clearfix">
-            <button>Update Details</button>
+            <button style={{ padding: "10px" }}>Update Details</button>
           </div>
         </form>
       </div>
