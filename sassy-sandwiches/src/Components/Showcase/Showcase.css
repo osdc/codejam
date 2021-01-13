@@ -100,6 +100,14 @@
   cursor: pointer;
 }
 
+.showcase_quotes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  text-align: center;
+  padding: 50px;
+}
+
 @media (max-width: 800px) {
   .showcase_main {
     background-size: cover;
@@ -139,6 +147,11 @@
 
   .showcase_needies > button {
     width: 50%;
+  }
+
+  .showcase_quotes {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 50px;
   }
 }
 
@@ -189,5 +202,13 @@
 
   .showcase_needies > button {
     width: 60%;
+  }
+
+  .showcase_quotes {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    text-align: center;
+    padding: 0px;
+    margin-bottom: 50px;
   }
 }

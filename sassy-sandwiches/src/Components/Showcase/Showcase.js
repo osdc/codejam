@@ -2,6 +2,8 @@ import React from "react";
 import "./Showcase.css";
 import { useHistory } from "react-router-dom";
 import { useAuth } from "../../AuthContext";
+import { data } from "../quotes/quotesData";
+import Quote from "../quotes/Quote";
 
 function Showcase() {
   const History = useHistory();
@@ -58,6 +60,11 @@ function Showcase() {
           />
         </div>
         <button onClick={handleNeedies}>See the Needies</button>
+      </div>
+      <div className="showcase_quotes">
+        {data.map((cur) => {
+          return <Quote name={cur.name} url={cur.url} quote={cur.quote} />;
+        })}
       </div>
     </div>
   );
