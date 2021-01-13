@@ -1,14 +1,71 @@
-# Getting Started with Create React App
+# Working of our Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## First of all when a user signup himself so he gets both options: Either to fund someone or ask for funds.
+
+### To fund a Firm
+
+User goes to <b>See Needies</b> section where all of the firms that require funds are listed along with why do they need funds and amount they need.
+<img src='./screenshots/Screenshot from 2021-01-13 15-12-05.png' height="300px">
+<br>
+So firstly <b>user must be logged in</b> to fund a firm.
+Then he must select the orgranisation that he wants to fund. We also have given the <b>live search</b> facility to user.
+Then he click the <b>fund button</b> which takes him to the funding page, where info about that firm is mentioned.
+<img src="./screenshots/Screenshot from 2021-01-13 15-15-27.png" height="300px">
+<br>
+User must enter some <b>amount less than or equal to the fund req</b>. Then press the Fund button to fund.
+A message popup saying that user have <b>Successfully</b> funded that particular firm.
+<img src="./screenshots/Screenshot from 2021-01-13 15-16-19.png" height="300px">
+<br>
+
+### To apply for Funds
+
+User must click on <b>Need funds?</b> button present on navbar.
+<img src="./screenshots/Screenshot from 2021-01-13 15-17-37.png" height="300px">
+<br>
+This takes him to a form where user has to fill all of the details asked and clikc the <b>Request for fund</b> button
+to display his firm in the needies section.
+<img src='./screenshots/Screenshot from 2021-01-13 15-18-10.png' height="300px">
+<br>
+
+### Who funded your firm
+
+To check who funded their firm, user must click on the <b>Bell icon 🔔</b> peresent on the navbar.
+This takes him to Notifications page.
+Their he sees the <b>Name, Email ID and Amount</b> that a person funded to his firm.
+<img src='./screenshots/Screenshot from 2021-01-13 15-21-15.png' height="300px">
+<br>
+We also have implemented the live search facility there too!
+
+### User Authentication
+
+We have given user <b>Login and SignUp</b> facility.
+Also if user <b>forgot</b> his password so he must click <b>Forgot Password?</b> link. This will take him to a page where on submiting the email id user gets a mail to mentioned email.
+There on cliking a link he can reset the password again 👍
+
+### Personalise Section
+
+#### User must logout first and login again to edit the details
+
+Here user can edit his details like <b>Name, Email, Password, Phone no.</b> and leave the details blank that needs to be remain same
+
+# Run this project on your system
+
+1. Fork this Repository
+   <img src='./screenshots/Screenshot from 2021-01-13 14-13-21.png' height="300px">
+   <br>
+2. Click on Code button and then copy the link
+   <img src='./screenshots/Screenshot from 2021-01-13 14-13-26.png' height="300px">
+   <br>
+3. Go to your terminal and type `git clone ` and then paste the copied link after this and hit Enter.
 
 ## Available Scripts
 
-In the project directory, you can run:
+Now go to the project directory, you can run:
 
 ### `npm start`
 
 Runs the app in the development mode.\
+
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
@@ -27,44 +84,8 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
