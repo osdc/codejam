@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useHistory } from "react-router-dom";
-import user from "./user.png"
+import user from "./user.png";
 
 import { useAuth } from "../AuthContext";
 import "./Signup.css";
@@ -27,11 +27,8 @@ const Signup = () => {
   };
 
   return (
-    <div className="form" className="login">
-      <img
-        src={user}
-        alt="sign up"
-      />
+    <div className="form login">
+      <img src={user} alt="sign up" />
       <form onSubmit={handleSubmit(onSubmit)}>
         {error !== "" ? <div className="form-error">{error}</div> : null}
         <div className="form-control">
@@ -78,7 +75,11 @@ const Signup = () => {
             <option value="teacher">Teacher</option>
           </select>
         </div>
-        <button type="submit" disabled={loading}class="btn btn-primary btn-block btn-large">
+        <button
+          type="submit"
+          disabled={loading}
+          class="btn btn-primary btn-block btn-large"
+        >
           Signup
         </button>
       </form>

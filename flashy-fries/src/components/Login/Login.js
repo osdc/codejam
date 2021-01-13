@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useHistory } from "react-router-dom";
-import user from "./user.png"
+import user from "./user.png";
 
 import { useAuth } from "../AuthContext";
 import "./Login.css";
@@ -12,26 +12,23 @@ const Login = () => {
   const { register, handleSubmit, errors } = useForm();
 
   const history = useHistory();
-  // const { signup } = useAuth();
+  const { login } = useAuth();
 
   const onSubmit = async (data) => {
     setError("");
     setLoading(true);
     try {
-      // await signup(data.email, data.password);
-      history.push("/dashboard");
+      await login(data.email, data.password);
+      history.push("/");
     } catch {
-      setError("Failed to create an account");
+      setError("Failed to log in");
       setLoading(false);
     }
   };
 
   return (
-    <div className="form" className="login">
-      <img
-        src={user}
-        alt="sign up"
-      />
+    <div className="form login">
+      <img src={user} alt="sign up" />
       <form onSubmit={handleSubmit(onSubmit)}>
         {error !== "" ? <div className="form-error">{error}</div> : null}
         <div className="form-control">
@@ -60,7 +57,11 @@ const Login = () => {
             </div>
           )}
         </div>
-        <button type="submit" disabled={loading} class="btn btn-primary btn-block btn-large">
+        <button
+          type="submit"
+          disabled={loading}
+          class="btn btn-primary btn-block btn-large"
+        >
           Login
         </button>
       </form>

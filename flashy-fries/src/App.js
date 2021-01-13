@@ -7,6 +7,7 @@ import Login from "./components/Login/Login";
 import Signup from "./components/Signup/Signup";
 import { AuthProvider } from "./components/AuthContext";
 import Dashboard from "./components/Dashboard/Dashboard";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 function App() {
   return (
@@ -24,7 +25,11 @@ function App() {
           <Route
             exact
             path="/dashboard"
-            render={(props) => <Dashboard {...props} />}
+            render={(props) => (
+              <ProtectedRoute>
+                <Dashboard />
+              </ProtectedRoute>
+            )}
           />
         </Switch>
       </BrowserRouter>
