@@ -52,7 +52,7 @@ body
    
   }
   .container:hover input ~ .checkmark {
-    background-color: #bb88ff;
+    background-color: #9067c5;
   }
   .container input:checked ~ .checkmark {
     background-color: #612aa8;
