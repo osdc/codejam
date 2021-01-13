@@ -48,7 +48,7 @@ body
     left: 5px;
     height: 25px;
     width: 25px;
-    background-color: #bc8cfc);
+    background-color: #bc8cfc;
    
   }
   .container:hover input ~ .checkmark {
