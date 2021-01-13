@@ -1,7 +1,16 @@
-<img src='./screenshots/My Post (1).png' height="300px" width="60%">
+<img src='./screenshots/My Post (1).png' height="300px" width="100%">
 <br>
 
-# About our project
+1. <a href="#1">About our Project</a>
+2. <a href="#2">Working of our project</a>
+3. <a href="#3">To fund a firm</a>
+4. <a href="#4">To apply for funds</a>
+5. <a href="#5">Who funded your firm</a>
+6. <a href="#6">User Authentication</a>
+7. <a href="#7">Personalise section</a>
+8. <a href="#8">Run this project</a>
+
+# <p id="1">About our project</p>
 
 In this world there are many great minds, who come up with innovative ideas, for the greater good. But due to circumstances like financial troubles, these ideas remain as only a mere dream. FundNeedy is a crowdfunding platform, which aims to raise money for these people, ranging from funding organizations in need, to emergency situations in someone's life like accidents or illness.
 
@@ -9,11 +18,11 @@ In this world there are many great minds, who come up with innovative ideas, for
 
 We are combining two opposite things, in relation with money. People who can't afford to fund in something, say for a project or in case of emergency, open up fund requests, in hope for that other people,mainly the rich people, can fund them in order to help and let them achieve their goal, without havingany financial trouble. The rich helps the poor achieve their goal, financially, hence two opposite things combining for the greater good.
 
-# Working of our Project
+# <p id="2">Working of our Project</p>
 
 ## First of all when a user signup himself so he gets both options: Either to fund someone or ask for funds.
 
-### To fund a Firm
+### <p id="3">To fund a Firm</p>
 
 User goes to <b>See Needies</b> section where all of the firms that require funds are listed along with why do they need funds and amount they need.
 <br>
@@ -31,7 +40,7 @@ A message popup saying that user have <b>Successfully</b> funded that particular
 <img src="./screenshots/Screenshot from 2021-01-13 15-16-19.png" height="300px">
 <br>
 
-### To apply for Funds
+### <p id="4">To apply for Funds</p>
 
 User must click on <b>Need funds?</b> button present on navbar.
 <br>
@@ -43,7 +52,7 @@ to display his firm in the needies section.
 <img src='./screenshots/Screenshot from 2021-01-13 15-18-10.png' height="300px">
 <br>
 
-### Who funded your firm
+### <p id="5"> Who funded your firm</p>
 
 To check who funded their firm, user must click on the <b>Bell icon 🔔</b> peresent on the navbar.
 This takes him to Notifications page.
@@ -53,19 +62,19 @@ Their he sees the <b>Name, Email ID and Amount</b> that a person funded to his f
 <br>
 We also have implemented the live search facility there too!
 
-### User Authentication
+### <p id="6">User Authentication</p>
 
 We have given user <b>Login and SignUp</b> facility.
 Also if user <b>forgot</b> his password so he must click <b>Forgot Password?</b> link. This will take him to a page where on submiting the email id user gets a mail to mentioned email.
 There on cliking a link he can reset the password again 👍
 
-### Personalise Section
+### <p id="7">Personalise Section</p>
 
 #### User must logout first and login again to edit the details
 
 Here user can edit his details like <b>Name, Email, Password, Phone no.</b> and leave the details blank that needs to be remain same
 
-# Run this project on your system
+# <p id="8">Run this project on your system</p>
 
 1. Fork this Repository
    <br>
