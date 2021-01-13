@@ -1,3 +1,14 @@
+<img src='./screenshots/My Post (1).png' height="300px" width="60%">
+<br>
+
+# About our project
+
+In this world there are many great minds, who come up with innovative ideas, for the greater good. But due to circumstances like financial troubles, these ideas remain as only a mere dream. FundNeedy is a crowdfunding platform, which aims to raise money for these people, ranging from funding organizations in need, to emergency situations in someone's life like accidents or illness.
+
+## Combining opposites
+
+We are combining two opposite things, in relation with money. People who can't afford to fund in something, say for a project or in case of emergency, open up fund requests, in hope for that other people,mainly the rich people, can fund them in order to help and let them achieve their goal, without havingany financial trouble. The rich helps the poor achieve their goal, financially, hence two opposite things combining for the greater good.
+
 # Working of our Project
 
 ## First of all when a user signup himself so he gets both options: Either to fund someone or ask for funds.
@@ -5,25 +16,30 @@
 ### To fund a Firm
 
 User goes to <b>See Needies</b> section where all of the firms that require funds are listed along with why do they need funds and amount they need.
+<br>
 <img src='./screenshots/Screenshot from 2021-01-13 15-12-05.png' height="300px">
 <br>
 So firstly <b>user must be logged in</b> to fund a firm.
 Then he must select the orgranisation that he wants to fund. We also have given the <b>live search</b> facility to user.
 Then he click the <b>fund button</b> which takes him to the funding page, where info about that firm is mentioned.
+<br>
 <img src="./screenshots/Screenshot from 2021-01-13 15-15-27.png" height="300px">
 <br>
 User must enter some <b>amount less than or equal to the fund req</b>. Then press the Fund button to fund.
 A message popup saying that user have <b>Successfully</b> funded that particular firm.
+<br>
 <img src="./screenshots/Screenshot from 2021-01-13 15-16-19.png" height="300px">
 <br>
 
 ### To apply for Funds
 
 User must click on <b>Need funds?</b> button present on navbar.
+<br>
 <img src="./screenshots/Screenshot from 2021-01-13 15-17-37.png" height="300px">
 <br>
 This takes him to a form where user has to fill all of the details asked and clikc the <b>Request for fund</b> button
 to display his firm in the needies section.
+<br>
 <img src='./screenshots/Screenshot from 2021-01-13 15-18-10.png' height="300px">
 <br>
 
@@ -32,6 +48,7 @@ to display his firm in the needies section.
 To check who funded their firm, user must click on the <b>Bell icon 🔔</b> peresent on the navbar.
 This takes him to Notifications page.
 Their he sees the <b>Name, Email ID and Amount</b> that a person funded to his firm.
+<br>
 <img src='./screenshots/Screenshot from 2021-01-13 15-21-15.png' height="300px">
 <br>
 We also have implemented the live search facility there too!
@@ -51,9 +68,11 @@ Here user can edit his details like <b>Name, Email, Password, Phone no.</b> and 
 # Run this project on your system
 
 1. Fork this Repository
+   <br>
    <img src='./screenshots/Screenshot from 2021-01-13 14-13-21.png' height="300px">
    <br>
 2. Click on Code button and then copy the link
+   <br>
    <img src='./screenshots/Screenshot from 2021-01-13 14-13-26.png' height="300px">
    <br>
 3. Go to your terminal and type `git clone ` and then paste the copied link after this and hit Enter.
