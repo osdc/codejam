@@ -1,14 +1,50 @@
-@font-face {
-  font-family: "Pacifico";
-  src: url(Pacifico-Regular.ttf);
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+.head
+{
+  font-size: 200px;
+  display: inline;
+  height: 200px;
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  color: white;
+ 
+}
+.head2
+{
+  font-size:70px;
+}
+.first
+{
+  font-family: 'Open Sans', sans-serif;
+  display: inline;
+}
+.second
+{
+  font-family: 'Yusei Magic', sans-serif;
+  display: inline;
+}
+.third
+{font-size: 50px;
+  text-align: center;
+ color:yellow;
+ display: inline;
+ margin: 20px;
+ 
 }
 img {
   display: inline;
   border-radius: 50%;
   width: 200px;
+  
+  
 }
 .descr {
-  border: 1px solid black;
+  
+  color: white;
+  font-family: 'Roboto Mono', monospace;
 }
 .description {
   font-family: Pacifico;
@@ -16,9 +52,19 @@ img {
   grid-template-columns: 0.05fr 1fr;
 }
 .graphics {
-  height: 200px;
-  margin: 100px;
-  padding: 100px;
-  border: 1px solid black;
+  
+  display: flex;
   text-align: center;
+}
+.column {
+  flex: 10%;
+  padding: 5px 0px 5px 300px;
+}
+.column1 {
+  flex: 10%;
+  padding: 35px 35px;
+}
+.column2 {
+  flex: 10%;
+  padding: 65px 350px 0px 0px;
 }
