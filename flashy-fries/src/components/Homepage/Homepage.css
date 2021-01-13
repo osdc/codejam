@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Pacifico";
+  src: url(Pacifico-Regular.ttf);
+}
 img {
   display: inline;
   border-radius: 50%;
@@ -7,6 +11,7 @@ img {
   border: 1px solid black;
 }
 .description {
+  font-family: Pacifico;
   display: grid;
   grid-template-columns: 0.05fr 1fr;
 }
