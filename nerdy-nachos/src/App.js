@@ -5,7 +5,6 @@ const FEATURED_API =
   "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=f61095f969a72b2640a7ff8ec08c5a31";
 const SEARCH_API =
   "https://api.themoviedb.org/3/search/movie?&api_key=f61095f969a72b2640a7ff8ec08c5a31&query=";
-
 function App() {
   const [movies, setMovies] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
@@ -36,7 +35,7 @@ function App() {
   return (
     <>
       <header>
-        <h1>Which Movie Should I Watch?</h1>
+        <h1>Binx</h1>
         <form onSubmit={handleOnSubmit}>
           <input
             type="search"
