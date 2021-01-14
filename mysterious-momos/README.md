@@ -20,8 +20,8 @@ Enjoy a visual representation of how maths and arts have a strong hidden interre
 * Check if your device supports AR foundation [via this link](https://developers.google.com/ar/discover/supported-devices)
 
 ### Installing and User Instructions
-1. Simply install the APK “Finalapp2.apk” present in this directory
-codejam-21/mysterious-momos/FinalProduct(OpenThis)/
+1. Simply install the APK “app.apk” present in this directory
+codejam-21/mysterious-momos/Oiler/
 
 1.	Explore the UI and while scanning the image make sure the screen is at maximum brightness (if scanning a soft copy) and the image is in a well lit up environment if scanning a hard copy. (i.e. a real painting)
 1.	Don’t keep the camera too close to the painting and try to main a distance of roughly  30 to 35 cms between the camera and the painting.
@@ -41,7 +41,7 @@ codejam-21/mysterious-momos/FinalProduct(OpenThis)/
    * The Music Lesson
 
 <p align ="center">
-<img src="https://github.com/distroinfinity/codejam-21/blob/main/mysterious-momos/Paintings.jpg" width="700" height="300" />
+<img src="https://github.com/distroinfinity/codejam-21/blob/main/mysterious-momos/paintings.jpg" width="700" height="300" />
 </p>
 
 1. Renders 3D models of the mathematical relations in AR on the painting and adjusts its rotation, position and scale in accordance with the painting. 
