@@ -5,9 +5,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 .head
 {
-  font-size: 15vw;
+  font-size: 9vw;
   display: inline;
- 
+  position: relative;
+  left: 10vw;
   text-align: left;
   font-family: 'Anton', sans-serif;
   color: rgb(184, 179, 255); 
@@ -16,40 +17,52 @@
 {
   color: #411966;
   font-family:'Bree Serif';
-  font-size:8vw;
+  font-size: 5vw;
+  position: relative;
+  left: 5vw;
+  top: 5vw;
 }
 .first
 {
-  font-size: 150%;
+  font-size: 120%;
   font-family: 'Yusei Magic', sans-serif;
   display: inline;
+  position: relative;
+  top: 5vw;
+  left: 2vw;
 }
 .second
 {
-  font-size: 150%;
+  font-size: 120%;
   font-family: 'Yusei Magic', sans-serif;
   display: inline;
+  position: relative;
+  top: 5vw;
+  left: 2vw;
 }
 .third
 {
   font-family: 'Bree Serif';
-  font-size: 10vw;
+  font-size: 3vw;
   text-align: center;
   color: #411966;
- display: inline;
- margin: 20px;
+  display: inline;
+  margin: 20px;
+  position: relative;
+  left: 5vw;
+  top: 3vw;
 }
 img {
   display: inline;
   border-radius: 50%;
-  width: 15vw;
-  margin: 5vw 5vw 0vw 5vw;
+  width: 10vw;
+  margin: 3vw 5vw 0vw 5vw;
 }
 
 .descr {
   font-size: 2vw;
   position: relative;
-  top:-10vw;
+  top:-13vw;
   left: 8vw;
   color: rgb(237, 215, 255);
   font-family: 'Yusei Magic', monospace;
@@ -61,12 +74,12 @@ img {
 }
 ul {
   position: relative;
-  left: 3.5vw;
-  top: -1vw;
+  left: 5vw;
+  top: 1vw;
 }
 .graphics {
   position: relative;
-  top: -15vw;
+  top: -20vw;
   display: flex;
   text-align: center;
 }

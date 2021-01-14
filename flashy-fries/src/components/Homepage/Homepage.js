@@ -22,7 +22,7 @@ function Homepage() {
           <div className="first">
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Two far ends of the spectrum, right? </div>
           <div className="second">Get the best<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of both worlds with Study Date!
-          We combine studying<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; with online dating to offer a unique experience!<br />
+          We combine studying<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; with online dating to offer a unique experience!<br />
           <br /></div>
          <h2 className="third"> &nbsp;&nbsp;How to use<br /></h2>
           <ul> <li> Visit the Study Date website and create an account for free.<br /> You are given the option to register either as a student or as a teacher. <br />
