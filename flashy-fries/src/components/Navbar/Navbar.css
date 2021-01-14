@@ -1,3 +1,4 @@
+/* styling for  navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -9,15 +10,12 @@
   margin-bottom: 10px;
 }
 
-.heading {
-  font-weight: 500;
-  font-size: 27px;
-}
 
+/* styling for links */
 .links a:not(:last-child) {
   margin-right: 15px;
 }
-
+/* styling for links added in navbar */
 a {
   text-decoration: none;
   cursor: pointer;
@@ -25,11 +23,17 @@ a {
  
   
 }
+/* convering div of links to inline function */
 .links{
   display:inline;
 }
+/* provide styling when hovered overlink */
 a:hover
 {
   color: #c6a4ff;
+}
+.heading {
+  font-weight: 500;
+  font-size: 27px;
 }
 

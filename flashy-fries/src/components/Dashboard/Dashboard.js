@@ -195,8 +195,7 @@ function Dashboard() {
               </label>
             </div>
             <div>
-              <button className="btn" type="submit">
-                Submit
+              <button className="btn" type="submit">Submit
               </button>
             </div>
           </form>

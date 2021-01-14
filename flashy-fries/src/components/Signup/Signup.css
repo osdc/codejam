@@ -1,9 +1,12 @@
+/* NOTE:WE HAVE USED THE SAME STYLING FOR LOGIN PAGE USING SIGNUP.CSS ELEMENTS GLOBALLY */
+/* css to show error while login/signup */
 .form-error {
   color: rgb(255, 74, 74);
   font-size: 18px;
 }
-
+/* to import font */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+/* submit/loginbutton styling */
 .btn {
   display: inline-block;
   *display: inline;
@@ -42,6 +45,7 @@
   cursor: pointer;
   *margin-left: 0.3em;
 }
+/* submit/login button hovering effect  */
 .btn:hover,
 .btn:active,
 .btn.active,
@@ -49,6 +53,7 @@
 .btn[disabled] {
   background-color: #e6e6e6;
 }
+/* button font used styling and its dimension */
 .btn-large {
   padding: 1vw 1.6vw 1.2vw 1.2vw;
   font-size: 2vw;
@@ -57,6 +62,7 @@
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
+/* submit/login button more hovering effect  */
 .btn:hover {
   color: #333333;
   text-decoration: none;
@@ -73,9 +79,11 @@
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   color: #ffffff;
 }
+/* link active styling */
 .btn-primary.active {
   color: rgba(255, 255, 255, 0.75);
 }
+/* signup/login button more styling */
 .btn-primary {
   background-color: #4a77d4;
   background-image: -moz-linear-gradient(top, #6eb6de, #4a77d4);
@@ -117,13 +125,13 @@
   -o-box-sizing: border-box;
   box-sizing: border-box;
 }
-
+/* universal html effect */
 html {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
-
+/* global body effect in our site */
 body {
   width: 100%;
   height: 100%;
@@ -135,6 +143,7 @@ body {
   overflow:scroll;
   overflow-x:hidden;
 }
+/* login styling */
 .login {
   position: relative;
   top: 10vw;
@@ -148,7 +157,7 @@ body {
   text-shadow: 0 0 1vw rgba(0, 0, 0, 0.3);
   font-size: 2vw;
 }
-
+/* input text styling */
 input {
   width: 100%;
   margin-bottom: 10px;
@@ -173,12 +182,14 @@ input:focus {
   box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.4),
     0 1px 1px rgba(255, 255, 255, 0.2);
 }
+/* image styling */
 .image
 {position: relative;
   width:20vw;
   height:15vw;
   left:3vw;
 }
+/* role in signup page styling */
 .role
 {
   color: #fff;

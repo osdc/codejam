@@ -1,8 +1,10 @@
+/* google font import */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+/* first heading " STUDY DATE "styling in home page */
 .head
 {
   font-size: 9vw;
@@ -13,6 +15,7 @@
   font-family: 'Anton', sans-serif;
   color: rgb(184, 179, 255); 
 }
+/* second heading " studying/dating "styling in home page */
 .head2
 {
   color: #411966;
@@ -22,6 +25,7 @@
   left: 5vw;
   top: 5vw;
 }
+/* first line styling under second heading */
 .first
 {
   font-size: 120%;
@@ -31,6 +35,7 @@
   top: 5vw;
   left: 2vw;
 }
+/* second line styling under second heading */
 .second
 {
   font-size: 120%;
@@ -40,6 +45,7 @@
   top: 5vw;
   left: 2vw;
 }
+/* third line styling under second heading */
 .third
 {
   font-family: 'Bree Serif';
@@ -52,13 +58,14 @@
   left: 5vw;
   top: 3vw;
 }
+/* basic styling for all images in homepage */
 img {
   display: inline;
   border-radius: 50%;
   width: 10vw;
   margin: 3vw 5vw 0vw 5vw;
 }
-
+/* styling for whole content below second heading */
 .descr {
   font-size: 2vw;
   position: relative;
@@ -67,30 +74,36 @@ img {
   color: rgb(237, 215, 255);
   font-family: 'Yusei Magic', monospace;
 }
+/* styling for whole content in homepage */
 .description {
   font-family: Pacifico;
   display: grid;
   grid-template-columns: 0.05fr 1fr;
 }
+/* styling for unordered list used in homepage */
 ul {
   position: relative;
   left: 5vw;
   top: 1vw;
 }
+/* general styling for img at bottom of homepage */
 .graphics {
   position: relative;
   top: -20vw;
   display: flex;
   text-align: center;
 }
+/*styling for first image from left at bottom of homepage */
 .column {
   flex: 10%;
   padding: 5vw 0vw 5vw 12.5vw;
 }
+/*styling for second image from left at bottom of homepage */
 .column1 {
   flex: 10%;
   padding: 7vw 3.5vw;
 }
+/*styling for third image from left at bottom of homepage */
 .column2 {
   flex: 10%;
   padding: 9.5vw 3.5vw 0vw 0vw;
