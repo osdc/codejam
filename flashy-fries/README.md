@@ -21,10 +21,9 @@ With our oxymoronic [Study Date™](https://study-date-eda7b.web.app/), we help 
 This is how Study Date™ works:
 * Visit the Study Date™ website and create an account on it for free. You are given the option to register either as a **student** or as a **teacher**.
 
-<p align=center>
 <img src=src/components/Homepage/ss1.PNG height=200>
 
-<img src=src/components/Homepage/ss2.PNG height=200> </p>
+<img src=src/components/Homepage/ss2.PNG height=200>
 
 * After getting logged in, visit the dashboard to see the **list of topics** available.
 * Choose the topic you want to study with or teach a random online date.
