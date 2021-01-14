@@ -1,3 +1,6 @@
 [submodule "badass-burgers"]
 	path = badass-burgers
 	url = git@github.com:iamsdas/combining-opposites.git
+[submodule "dexterous-dosas"]
+	path = dexterous-dosas
+	url = https://github.com/starkah/Chess-Tunes
