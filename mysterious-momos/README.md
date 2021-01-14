@@ -1,4 +1,6 @@
-![alt](logo.png)
+<p align ="center">
+<img src="https://github.com/distroinfinity/codejam-21/blob/main/mysterious-momos/logo.png" width="200" height="200" />
+</p>
 
 # OILER 
 
@@ -37,16 +39,25 @@ codejam-21/mysterious-momos/FinalProduct(OpenThis)/
    * Leda Atomica
 
    * The Music Lesson
-   
-![alt](Paintings.jpg)
+
+<p align ="center">
+<img src="https://github.com/distroinfinity/codejam-21/blob/main/mysterious-momos/Paintings.jpg" width="700" height="300" />
+</p>
 
 1. Renders 3D models of the mathematical relations in AR on the painting and adjusts its rotation, position and scale in accordance with the painting. 
 
 1. Also, contains a "more info" tab for you to read about the theoretical aspects of the painting and the mathematics involved in it.
 
-![alt](features.png)
+
+<p align ="center">
+<img src="https://github.com/distroinfinity/codejam-21/blob/main/mysterious-momos/features.png" width="700" height="300" />
+</p>
 
 ## Built With;
+
+<p align ="center">
+<img src="https://github.com/distroinfinity/codejam-21/blob/main/mysterious-momos/unity.png" width="275" height="125" />
+</p>
 
 * Unity 2019.4.10f1 - development engine
 
