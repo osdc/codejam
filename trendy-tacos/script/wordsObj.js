@@ -7,10 +7,10 @@ export let items = {
     "ccleaner",
     "bleachbit",
     "itchleabnaeercbcl",
-    "free diskspace/privacy",
+    "privacy/free diskspace",
   ],
   word6: ["flstudio", "audacity", "fitulauctdasdioy", "Audio editor"],
-  word7: ["photoshop", "gimp", "photsgihoopmp", "Graphics/Drawing"],
+  word7: ["photoshop", "darktable", "doohtaabptlroekshp", "Graphics/Drawing"],
   word8: [
     "microsoftoffice",
     "libreoffice",
