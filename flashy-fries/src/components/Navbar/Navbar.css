@@ -1,0 +1,39 @@
+/* styling for  navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #57239b72;
+  color: white;
+  padding: 10px 15px;
+  font-size: 1.5vw;
+  margin-bottom: 10px;
+}
+
+
+/* styling for links */
+.links a:not(:last-child) {
+  margin-right: 15px;
+}
+/* styling for links added in navbar */
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+ 
+  
+}
+/* convering div of links to inline function */
+.links{
+  display:inline;
+}
+/* provide styling when hovered overlink */
+a:hover
+{
+  color: #c6a4ff;
+}
+.heading {
+  font-weight: 500;
+  font-size: 27px;
+}
+

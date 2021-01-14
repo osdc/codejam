@@ -1,0 +1,11 @@
+.submit {
+  display: inline;
+  padding: 10px;
+}
+/* login image styling */
+.image
+{position: relative;
+  width:20vw;
+  height:15vw;
+  left:3vw;
+}
