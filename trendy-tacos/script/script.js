@@ -1,5 +1,7 @@
 import { items } from "./wordsObj.js";
 
+//ELEMENT OBJECT
+
 const elements = {
   btnNew: document.querySelector(".btn-new"),
   btnRound: document.querySelector(".btn-round"),
@@ -19,14 +21,14 @@ const elements = {
   wrongSecond: document.querySelector(".wrong-container-2"),
 };
 
-const len = Object.keys(items).length;
+const len = Object.keys(items).length; //Find number of words stored in object
 let n = Math.ceil(Math.random() * len); //randomly choosing a number in [0,len]
 let word = "word" + n;
 
 let score,
   activePlayer,
   isGame,
-  correctLettersOne = [],
+  correctLettersOne = [], //Array to store letters
   wrongLettersOne = [],
   correctLettersSecond = [],
   wrongLettersSecond = [];
@@ -51,7 +53,7 @@ const displayWinner = (el) => {
   elements.btnNew.style.display = "block";
 };
 
-//CHECK WINNER
+//UPDATE SCORE AND CHECK WINNER
 
 const updateScore = (el) => {
   if (score[el - 1] <= 1) {
@@ -64,7 +66,7 @@ const updateScore = (el) => {
   displayScore();
 };
 
-//DISPLAY WORD FOR PLAYER 1 AND CHECK IF IT WON
+//DISPLAY WORD FOR PLAYER 1 AND CHECK IF THE WORD IS MATCHING
 
 const displayWordOne = (n, word) => {
   elements.wordOne.innerHTML = `
@@ -88,7 +90,7 @@ const displayWordOne = (n, word) => {
   }
 };
 
-//DISPLAY WORD FOR PLAYER 2 AND CHECK IF IT WON
+//DISPLAY WORD FOR PLAYER 2 AND CHECK IF THE WORD IS MATCHING
 
 const displayWordSecond = (n, word) => {
   elements.wordSecond.innerHTML = `
@@ -112,7 +114,7 @@ const displayWordSecond = (n, word) => {
   }
 };
 
-//WRONG LETTER HANDLER
+//HANDLE WRONG LETTERS AND DISPLAY OF ROD'S PARTS
 
 const wrongFunction = () => {
   if (activePlayer === 1) {
@@ -240,7 +242,7 @@ const valueGenerator = () => {
   displayWordSecond(n, word);
 };
 
-//CHECK IF A LETTER IS CORRECT
+//INITIALIZATION FUNCTION FOR APP STARTUP
 
 const init = () => {
   score = [0, 0];
@@ -255,6 +257,8 @@ const init = () => {
 };
 
 init();
+
+//NEW ROUND FUNCTION
 
 const newRound = () => {
   //TO RESET VALUES FOR A NEW GAME
@@ -276,6 +280,8 @@ const newRound = () => {
   elements.btnRound.style.display = "none";
 };
 
+//NEW GAME FUNCTION
+
 const newGame = () => {
   document.querySelector(".winner-1").style.display = "none";
   document.querySelector(".winner-2").style.display = "none";
@@ -284,6 +290,8 @@ const newGame = () => {
   newRound();
   elements.btnNew.style.display = "none";
 };
+
+//EVENT LISTENERS FOR BUTTON
 
 elements.btnRound.addEventListener("click", newRound);
 
