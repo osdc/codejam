@@ -9,8 +9,7 @@
   height: 200px;
   text-align: left;
   font-family: 'Anton', sans-serif;
-  color: white;
- 
+  color: white; 
 }
 .head2
 {
@@ -27,23 +26,23 @@
   display: inline;
 }
 .third
-{font-size: 50px;
+{
+  font-size: 50px;
   text-align: center;
  color:#D3C20E;
  display: inline;
  margin: 20px;
- 
 }
 img {
   display: inline;
   border-radius: 50%;
   width: 200px;
   margin: 70px;
-  
-  
 }
+
 .descr {
-  
+  position: relative;
+  top: -150px;
   color: white;
   font-family: 'Yusei Magic', monospace;
 }
@@ -53,7 +52,8 @@ img {
   grid-template-columns: 0.05fr 1fr;
 }
 .graphics {
-  
+  position: relative;
+  top: -150px;
   display: flex;
   text-align: center;
 }

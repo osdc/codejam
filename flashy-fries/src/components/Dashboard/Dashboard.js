@@ -70,9 +70,9 @@ function Dashboard() {
   return (
     <div>
       <h1 className="heading">WELCOME TO STUDY DATE</h1>
-      <h2>Your Email: {userEmail}</h2>
+      <h2>&nbsp;&nbsp;&nbsp;Your Email: {userEmail}</h2>
       <div>
-        <h1 className="heading1">List of Topics you have selected</h1>
+        <h1 className="heading1">&nbsp;&nbsp;List of Topics you have selected</h1>
       </div>
       {isEditing ? (
         <>
