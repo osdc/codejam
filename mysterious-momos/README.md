@@ -25,7 +25,7 @@ codejam-21/mysterious-momos/FinalProduct(OpenThis)/
 1.	Don’t keep the camera too close to the painting and try to main a distance of roughly  30 to 35 cms between the camera and the painting.
    1.	Keep adjusting the distance until AR content is rendered on the image.
 
-(Refer to the video present at in the directory codejam-21/mysterious-momos/FinalProduct(OpenThis)/ to get an overview of the usage.)
+(Refer to the video present at in the directory codejam-21/mysterious-momos/_Oiler.mp4/ to get an overview of the usage.)
 
 
 ## Features
@@ -37,21 +37,14 @@ codejam-21/mysterious-momos/FinalProduct(OpenThis)/
    * Leda Atomica
 
    * The Music Lesson
-
-![alt](Mona%20Lisa.jpg)
-
-![alt](LedaAtomica.jpg)
-
-![alt](TheMusicLesson.jpg)
+   
+![alt](Paintings.jpg)
 
 1. Renders 3D models of the mathematical relations in AR on the painting and adjusts its rotation, position and scale in accordance with the painting. 
 
 1. Also, contains a "more info" tab for you to read about the theoretical aspects of the painting and the mathematics involved in it.
 
-![alt](1%20(2).jpg)
-![alt](2.jpg)
-![alt](3.jpg)
-![alt](4.jpg)
+![alt](features.png)
 
 ## Built With;
 
