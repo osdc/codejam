@@ -20,4 +20,11 @@ This is how Study Date™ works:
 ______
 We have used the widely hated and ridiculed Comic Sans MS font for *designing* our logo, because why not, since we are *combining opposites*. :smiley:
 
+____
+To-Do:
+1. Implement frontend backend.
+2. Host site.
+3. Update README with links and screenshots.
+
+
 
