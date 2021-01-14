@@ -70,7 +70,7 @@ function Dashboard() {
   return (
     <div>
       <h1 className="heading">WELCOME TO STUDY DATE</h1>
-      <h2>&nbsp;&nbsp;&nbsp;Your Email: {userEmail}</h2>
+      <h2 className="heading3">&nbsp;&nbsp;&nbsp;Your Email: {userEmail}</h2>
       <div>
         <h1 className="heading1">&nbsp;&nbsp;List of Topics you have selected</h1>
       </div>
@@ -135,7 +135,7 @@ function Dashboard() {
       ) : (
         <ul>
           {topics.map((topic) => {
-            return <li key={topic}>{topic}</li>;
+            return <li className="heading3" key={topic}>{topic}</li>;
           })}
         </ul>
       )}

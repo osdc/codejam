@@ -7,24 +7,31 @@ body {
 .heading {
   color: #d0acff;
   text-align: center;
-  font-size: 70px;
+  font-size: 7vw;
   background-color: #57239b96;
   border-radius: 50px;
   font-family: "Yusei Magic", sans-serif;
 }
 .heading1 {
-  font-size: 40px;
+  font-size: 5vw;
   display: inline;
+  border-radius: 5px;
+  font-family: "Fraunces", serif;
+}
+.heading3
+{
+  font-size: 3vw;
+ 
   border-radius: 5px;
   font-family: "Fraunces", serif;
 }
 .container {
   display: block;
   position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
+  padding-left: 4vw;
+  margin-bottom: 1vw;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 3vw;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -41,9 +48,9 @@ body {
   background-color: #dabeff;
   position: absolute;
   top: 0;
-  left: 5px;
-  height: 25px;
-  width: 25px;
+  left: 0.5vw;
+  height: 3vw;
+  width: 3vw;
   background-color: #bc8cfc;
 }
 .container:hover input ~ .checkmark {
@@ -61,8 +68,8 @@ body {
   display: block;
 }
 .container .checkmark:after {
-  left: 9px;
-  top: 5px;
+  left: 1vw;
+  top: 0.8vw;
   width: 5px;
   height: 10px;
   border: solid white;
@@ -80,9 +87,9 @@ body {
 
   border-color: #522d83;
 
-  height: 50px;
+  height: 5vw;
 
-  width: 100px;
+  width: 10vw;
 
   font: bold px arial, sans-serif;
 

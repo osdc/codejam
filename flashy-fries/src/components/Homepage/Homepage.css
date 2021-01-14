@@ -5,9 +5,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 .head
 {
-  font-size: 200px;
+  font-size: 15vw;
   display: inline;
-  height: 200px;
+ 
   text-align: left;
   font-family: 'Anton', sans-serif;
   color: rgb(184, 179, 255); 
@@ -16,7 +16,7 @@
 {
   color: #411966;
   font-family:'Bree Serif';
-  font-size:70px;
+  font-size:8vw;
 }
 .first
 {
@@ -33,7 +33,7 @@
 .third
 {
   font-family: 'Bree Serif';
-  font-size: 50px;
+  font-size: 10vw;
   text-align: center;
   color: #411966;
  display: inline;
@@ -42,15 +42,15 @@
 img {
   display: inline;
   border-radius: 50%;
-  width: 200px;
-  margin: 70px;
+  width: 15vw;
+  margin: 5vw 5vw 0vw 5vw;
 }
 
 .descr {
-  font-size: 120%;
+  font-size: 2vw;
   position: relative;
-  top: -100px;
-  left: 350px;
+  top:-10vw;
+  left: 8vw;
   color: rgb(237, 215, 255);
   font-family: 'Yusei Magic', monospace;
 }
@@ -61,24 +61,24 @@ img {
 }
 ul {
   position: relative;
-  left: 50px;
-  top: -10px;
+  left: 3.5vw;
+  top: -1vw;
 }
 .graphics {
   position: relative;
-  top: -150px;
+  top: -15vw;
   display: flex;
   text-align: center;
 }
 .column {
   flex: 10%;
-  padding: 5px 0px 5px 125px;
+  padding: 5vw 0vw 5vw 12.5vw;
 }
 .column1 {
   flex: 10%;
-  padding: 35px 35px;
+  padding: 7vw 3.5vw;
 }
 .column2 {
   flex: 10%;
-  padding: 65px 350px 0px 0px;
+  padding: 9.5vw 3.5vw 0vw 0vw;
 }

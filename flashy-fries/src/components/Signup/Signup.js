@@ -28,11 +28,11 @@ const Signup = () => {
 
   return (
     <div className="form login">
-      <img src={user} alt="sign up" />
+      <img className="image"src={user} alt="sign up" />
       <form onSubmit={handleSubmit(onSubmit)}>
         {error !== "" ? <div className="form-error">{error}</div> : null}
         <div className="form-control">
-          Username:
+        <h1>Username:</h1>
           <input
             type="text"
             name="username"
@@ -43,14 +43,14 @@ const Signup = () => {
           )}
         </div>
         <div className="form-control">
-          Email:
+          <h1>Email:</h1>
           <input type="email" name="email" ref={register({ required: true })} />
           {errors.email && (
             <div className="form-error">This field is required</div>
           )}
         </div>
         <div className="form-control">
-          Password:
+        <h1>Password:</h1>
           <input
             type="password"
             name="password"
@@ -69,8 +69,8 @@ const Signup = () => {
           )}
         </div>
         <div className="form-control">
-          Role:
-          <select name="role" ref={register}>
+          <h1 className="role">Role:</h1>
+          <select className="role1" name="role" ref={register}>
             <option value="student">Student</option>
             <option value="teacher">Teacher</option>
           </select>
