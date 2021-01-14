@@ -137,10 +137,11 @@ body {
   background-attachment: fixed;
   background-size: contain;
   overflow:scroll;
+  overflow-x:hidden;
 }
 .login {
   position: absolute;
-  top: 35%;
+  top: 20%;
   left: 50%;
   margin: -150px 0 0 -150px;
   width: 300px;

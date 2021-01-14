@@ -46,7 +46,7 @@ img {
   font-size: 120%;
   position: relative;
   top: -150px;
-  left: 300px;
+  left: 150px;
   color: white;
   font-family: 'Yusei Magic', monospace;
 }
@@ -68,7 +68,7 @@ ul {
 }
 .column {
   flex: 10%;
-  padding: 5px 0px 5px 300px;
+  padding: 5px 0px 5px 125px;
 }
 .column1 {
   flex: 10%;

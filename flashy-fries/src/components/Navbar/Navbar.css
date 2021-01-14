@@ -22,4 +22,24 @@ a {
   text-decoration: none;
   cursor: pointer;
   color: white;
+ 
+  
 }
+.links{
+  display:inline;
+}
+.links a:hover
+{
+color: black;
+background-color:white;
+border-radius:5px;
+font-weight: 700;
+text-shadow: 2px 2px 4px #000000;
+
+}
+a:hover
+{
+  text-shadow: 1px 1px 2px rgb(228, 21, 21), 0 0 25px yellowgreen, 0 0 5px green;
+  opacity: 0.75;
+}
+
