@@ -1,5 +1,5 @@
 <p align="center" width="100%">
-    <img width="33%" src="./img/readme.freeman.jpg"> 
+    <img width="25%" src="./img/readme.freeman.jpg"> 
 </p>
 
 ## FREEMAN
@@ -28,4 +28,7 @@ Head straight in -> [FREEMAN](https://ishan-saini.github.io/codejam-21/trendy-ta
   5. Use Keyboard keys for input and mouse for interacting with buttons.
 
 TODO -
-While this project was created under a coding event, We'd still be working on it after the event. Some functionalities we might add - 1. Timer for each turn. 2. Avoid repeating of words 3. Remote connection using socket.io
+While this project was created under a coding event, We'd still be working on it after the event. Some functionalities we might add -  
+1. Timer for each turn.  
+2. Avoid repeating of words  
+3. Remote connection using socket.io
