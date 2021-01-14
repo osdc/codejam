@@ -1,4 +1,5 @@
-# Movies React App
+### Movies React App
+<h1 align="center"> BINX </h1>
 
 ![Screenshot](./screenshot.png)
 
@@ -16,4 +17,4 @@
 ```
 and then head over to https://localhost:3000
 
-frontend is made with the help of [florin pop's video](https://www.youtube.com/watch?v=sZ0bZGfg_m4)
+Frontend is made with the help of [Florin pop's video](https://www.youtube.com/watch?v=sZ0bZGfg_m4)
