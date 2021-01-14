@@ -20,15 +20,19 @@ With our oxymoronic [Study Date™](https://study-date-eda7b.web.app/), we help 
 ## How to use Study Date?
 This is how Study Date™ works:
 * Visit the Study Date™ website and create an account on it for free. You are given the option to register either as a **student** or as a **teacher**.
-
 <img src=src/components/Homepage/ss1.PNG height=200>
-
 <img src=src/components/Homepage/ss2.PNG height=200>
 
 * After getting logged in, visit the dashboard to see the **list of topics** available.
+  
+  <img src=src/components/Homepage/ss5.PNG>
+
 * Choose the topic you want to study with or teach a random online date.
 * You can either choose to study with a student (Study Date™) or a teacher. (To be implemented)
 * Our backend matches you with someone who wants to study the same topic and initiates a video call for you with them.
+  
+  <img src=src/components/Homepage/ss6.PNG>
+  
 * After you are done studying on video call, you can obtain your reward (cute dog & cat photos) for completing the Study Date™. (To be implemented)
   
 ## How to set up
