@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Josefin+Sans|Oswald|Roboto');
+
+body {
+  font-family: 'Roboto', serif;
+  padding-top: 64px;
+  min-height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+.base-content {
+  max-width: 1024;
+}
+
+.game-padding {
+  padding-top: 0px;
+}
+
+ul {
+    list-style: none; /* Remove list bullets */
+    padding: 0;
+    margin: 0;
+}
+
+p, label {
+  font-family: 'Roboto', serif;
+}
+
+.question-number {
+  font-family: 'Cinzel', serif;
+}
+
+.riddle, h3, h4 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.nav-item {
+  font-family: 'Oswald', sans-serif;
+}
+
+.round-options {
+  column-count: 3;
+}
+
+.round-options img {
+  height: 150px;
+}
+
+.img-pad li {
+  padding: 1ex;
+}
+
+.img-pad img:hover {
+  border-radius: 20px;
+}
+
+.form-actual {
+  margin: auto;
+  width: 50%;
+  padding: 20px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 66px;
+  }
+  .game-padding {
+  padding-top: 32px;
+  }
+}

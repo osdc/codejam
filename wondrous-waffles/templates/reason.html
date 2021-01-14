@@ -1,0 +1,18 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container base-content game-page">
+
+    <div class="row text-center game-padding">
+        <div class="col-md-12 text-center">
+            <h2 class="question-number">Reasons : </h2>
+        {% for reason in reasons[riddle_index].split("$next") %}
+        {{ reason }}
+        <br><br>
+        {% endfor %}
+        <form method="POST">
+            <input type="hidden" name="riddle_index" id="riddle_index" value={{riddle_index}}>
+            <button class="btn btn-dark hvr-round-corners">next</button>
+        </form>
+    </div>
+    </div>
+</div>
+{% endblock %}

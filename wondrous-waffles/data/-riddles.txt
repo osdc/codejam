@@ -1,0 +1,5 @@
+../static/img/fish.jfif ../static/img/milk.jfif ../static/img/burger.jfif ../static/img/coffee.jfif ../static/img/sandwiches.jfif ../static/img/fries.jfif
+../static/img/mint.jfif ../static/img/jam.jfif ../static/img/whitebread.jfif ../static/img/tomatoes.jfif ../static/img/cucumber.jfif ../static/img/cola.jfif
+../static/img/alcohol.jfif ../static/img/cereal.jfif ../static/img/PastaSauce.jfif ../static/img/nuts.jfif ../static/img/juice.jfif ../static/img/cheese.jfif
+../static/img/pizza.jfif ../static/img/alcohol.jfif ../static/img/mincedmeat.jfif ../static/img/pasta.jfif ../static/img/sweets.jfif ../static/img/cola.jfif
+../static/img/yogurt.jfif ../static/img/fish.jfif ../static/img/ghee.jfif ../static/img/milk.jfif ../static/img/beans.jfif ../static/img/honey.jfif
