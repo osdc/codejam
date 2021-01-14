@@ -1,3 +1,4 @@
-This is your team's README.
+##CHESS TUNES
 
-Feel free to edit it as per you like.
+A website to turn your strategic chess matches into some fun musical tunes.
+
