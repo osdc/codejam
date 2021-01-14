@@ -20,8 +20,8 @@ With our oxymoronic [Study Date™](https://study-date-eda7b.web.app/), we help 
 ## How to use Study Date?
 This is how Study Date™ works:
 * Visit the Study Date™ website and create an account on it for free. You are given the option to register either as a **student** or as a **teacher**.
-<img src=src/components/Homepage/ss1.PNG height=200>
-<img src=src/components/Homepage/ss2.PNG height=200>
+  <img src=src/components/Homepage/ss1.PNG height=200>
+  <img src=src/components/Homepage/ss2.PNG height=200>
 
 * After getting logged in, visit the dashboard to see the **list of topics** available.
   
