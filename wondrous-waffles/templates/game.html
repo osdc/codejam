@@ -1,0 +1,61 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container base-content game-page">
+
+  <div class="row text-center game-padding">
+
+    <div class="col-md-12">
+      <h2 class="question-number">Round {{riddle_index + 1}}:</h2>
+    </div>
+
+    <div class="col-md-12">
+      <ul class="round-options img-pad">
+        {% for i in range(6) %}
+        {{ options[riddle_index].split()[i] }}
+        <li><img src="{{ riddles[riddle_index].split()[i] }}" alt=""></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="col-md-12 text-center">
+      <form method="POST" class="form-actual">
+        <div class="form-group row">
+          <label for="inputEmail3" class="col-sm-6 col-form-label">{{ options[riddle_index].split()[0] }} :  </label>
+          <div class="col-sm-4">
+            <input type="text" class="form-control" name="1" id="1">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputPassword3" class="col-sm-6 col-form-label">{{ options[riddle_index].split()[2] }} :  </label>
+          <div class="col-sm-4">
+            <input type="text" class="form-control" name="2" id="2">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputPassword3" class="col-sm-6 col-form-label">{{ options[riddle_index].split()[4] }} :  </label>
+          <div class="col-sm-4">
+            <input type="text" class="form-control" name="3" id="3">
+          </div>
+        </div>
+        <input type="hidden" name="riddle_index" id="riddle_index" value={{riddle_index}}>
+        <button class="btn btn-dark hvr-round-corners">send</button>
+      </form>
+    </div>
+  </div>
+
+</div>
+<div class="container game-extras">
+  <div class="row fixed-bottom text-center">
+
+    <div class="col-md-6 col-xs-12">
+      <h4>Attempts Remaining</h4>
+      <p> {{ remaining_attempts }} </p>
+    </div>
+
+    <div class="col-md-6 col-xs-12">
+      <h4>Current Score</h4>
+      <p> {{ score }} </p>
+    </div>
+
+  </div>
+
+</div>
+{% endblock %}

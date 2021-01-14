@@ -1,0 +1,14 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container base-content">
+    <div class="row justify-content-center">
+        <div class="col text-center">
+            <h1>Game Over!</h1>
+            <p>Sorry, you made the wrong match too many times.</p>
+            <form method="POST">
+                <input type="hidden" name="restart" value="start_again">
+                <button class="btn btn-dark hvr-round-corners">Try Again</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

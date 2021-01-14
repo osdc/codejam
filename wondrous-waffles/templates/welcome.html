@@ -1,0 +1,25 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container base-content welcome-page">
+    <div class="row">
+        <div class="col text-center">
+            <h1>Welcome to Food Riddle, {{ username.title() }}</h1>
+            <hr>
+            <p>This is a match and combine riddle game. The rules are as follows:</p>
+            <ul>
+                <li>There are 5 levels in the game.</li>
+                <li>There will be 3 pairs of food items to match.</li>
+                <li>You have to match opposite food items (food items which should not be eaten together).</li>
+                <li>If you match wrong items three times in a level, it's GAME OVER.</li>
+                <li>If you answer the riddle on your first guess, you get 3 points.</li>
+                <li>One point gets deducted per wrong guess.</li>
+                <li>How far can you get?</li>
+            </ul>
+            <br>
+            <form method="POST">
+                <p>Press the button below the start a new game.</p>
+                <button class="btn btn-dark hvr-round-corners">PLAY</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
