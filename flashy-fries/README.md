@@ -49,7 +49,7 @@ This is how Study Date™ works:
 5. Run the command ```npm start``` 
 6. The site will open itself in your default browser. In case it doesn't, enter ```http://localhost:3000/``` into your address bar to visit the Study Date website, and get started!
 
-Alternatively, you could visit our site [here](https://study-date-eda7b.web.app/)
+Alternatively, you could visit our site [here](https://study-date-eda7b.web.app/)!
    
 ______
 We have used the widely hated and ridiculed Comic Sans MS font for *designing* our logo, because why not, since we are *combining opposites*. :smiley:
