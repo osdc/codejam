@@ -224,7 +224,9 @@ def gameover(username):
 
     clear_guesses(username)
     clear_score(username)
-
+    
+    global round
+    round = 0
     rem_attempts = 3
     riddles = riddle()
     riddle_index = 0
