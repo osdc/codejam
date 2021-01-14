@@ -82,6 +82,23 @@ body {
   position: relative;
 }
 
+.winner-head {
+  text-transform: uppercase;
+  left: 50%;
+  top: 7%;
+  font-weight: 600;
+  font-size: 30px;
+  color: #b39b3d;
+}
+
+.winner-1 {
+  display: none;
+}
+
+.winner-2 {
+  display: none;
+}
+
 .figure-container {
   fill: transparent;
   stroke: #777;
@@ -218,6 +235,10 @@ i {
   transition: margin 0.3s;
 }
 
-.new-btn {
+.btn-round {
+  display: none;
+}
+
+.btn-new {
   display: none;
 }

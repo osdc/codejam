@@ -1,7 +1,8 @@
 import { items } from "./wordsObj.js";
 
 const elements = {
-  newBtn: document.querySelector(".new-btn"),
+  btnNew: document.querySelector(".btn-new"),
+  btnRound: document.querySelector(".btn-round"),
   figureOne: document.querySelector(".figure-1"),
   figureSecond: document.querySelector(".figure-2"),
   hintText: document.querySelector(".hint"),
@@ -42,12 +43,23 @@ const hintGenerator = (n, word) => {
   elements.hintText.innerText = items[word][3];
 };
 
+//DISPLAY WINNER
+
+const displayWinner = (el) => {
+  elements.btnRound.style.display = "none";
+  document.querySelector(".winner-" + el).style.display = "block";
+  elements.btnNew.style.display = "block";
+};
+
 //CHECK WINNER
 
 const updateScore = (el) => {
-  console.log(el);
   if (score[el - 1] <= 1) {
     score[el - 1] += 1;
+    if (score[el - 1] >= 2) {
+      displayScore();
+      displayWinner(el);
+    }
   }
   displayScore();
 };
@@ -70,7 +82,7 @@ const displayWordOne = (n, word) => {
   const innerWord = elements.wordOne.innerText.replace(/\n/g, "");
   const selectedWord = items[word][0].toUpperCase();
   if (innerWord === selectedWord) {
-    elements.newBtn.style.display = "block";
+    elements.btnRound.style.display = "block";
     updateScore(activePlayer);
     isGame = false;
   }
@@ -94,7 +106,7 @@ const displayWordSecond = (n, word) => {
   const innerWord = elements.wordSecond.innerText.replace(/\n/g, "");
   const selectedWord = items[word][1].toUpperCase();
   if (innerWord === selectedWord) {
-    elements.newBtn.style.display = "block";
+    elements.btnRound.style.display = "block";
     updateScore(activePlayer);
     isGame = false;
   }
@@ -122,8 +134,9 @@ const wrongFunction = () => {
       }
     });
     if (wrongLettersOne.length === 4) {
+      elements.btnRound.style.display = "block";
+      updateScore(activePlayer + 1);
       isGame = false;
-      elements.newBtn.style.display = "block";
     }
   } else if (activePlayer === 2) {
     elements.wrongSecond.innerHTML = `
@@ -144,8 +157,9 @@ const wrongFunction = () => {
       }
     });
     if (wrongLettersSecond.length === 4) {
+      elements.btnRound.style.display = "block";
+      updateScore(activePlayer - 1);
       isGame = false;
-      elements.newBtn.style.display = "block";
     }
   }
 };
@@ -232,6 +246,8 @@ const init = () => {
   score = [0, 0];
   activePlayer = 1;
   isGame = true;
+  n = Math.ceil(Math.random() * len);
+  word = "word" + n;
   valueGenerator();
   elements.scoreOne.innerText = "0";
   elements.scoreSecond.innerText = "0";
@@ -240,7 +256,7 @@ const init = () => {
 
 init();
 
-const newGame = () => {
+const newRound = () => {
   //TO RESET VALUES FOR A NEW GAME
   isGame = true;
   correctLettersOne.splice(0);
@@ -257,7 +273,18 @@ const newGame = () => {
     wrongFunction();
   }
   nextPlayer();
-  elements.newBtn.style.display = "none";
+  elements.btnRound.style.display = "none";
 };
 
-elements.newBtn.addEventListener("click", newGame);
+const newGame = () => {
+  document.querySelector(".winner-1").style.display = "none";
+  document.querySelector(".winner-2").style.display = "none";
+  score = [0, 0];
+  displayScore();
+  newRound();
+  elements.btnNew.style.display = "none";
+};
+
+elements.btnRound.addEventListener("click", newRound);
+
+elements.btnNew.addEventListener("click", newGame);
