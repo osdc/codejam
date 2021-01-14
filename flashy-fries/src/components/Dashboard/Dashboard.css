@@ -18,10 +18,9 @@ body {
   border-radius: 5px;
   font-family: "Fraunces", serif;
 }
-.heading3
-{
+.heading3 {
   font-size: 3vw;
- 
+
   border-radius: 5px;
   font-family: "Fraunces", serif;
 }
@@ -91,24 +90,20 @@ body {
 
   width: 9vw;
 
-  font: bold px arial, sans-serif;
+  font: bold 24px arial, sans-serif;
 
   text-shadow: none;
 
   margin-bottom: 15px;
   margin-left: 0.5vw;
-  padding-bottom: 1.5vw;
   margin-top: 0.5vw;
 }
- .edit
-{
-  background:#975ee0;
+.edit {
+  background: #975ee0;
 
   color: white;
 
   border-style: outset;
-
-  
 
   height: 3.7vw;
 
@@ -119,6 +114,4 @@ body {
   text-shadow: none;
 
   margin-bottom: 15px;
-  
-
-} 
+}
