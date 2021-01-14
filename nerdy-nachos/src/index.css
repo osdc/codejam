@@ -1,1 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 
+/*
+ On box-sizing and border-box:
+ https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
+ */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #22254b;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+/*
+  Flex Direction: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction
+
+    In column mode, items are in a single column, one below the other
+
+*/
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #373b69;
+  padding: 1rem;
+}
+header h1 {
+    color: orange;
+}
+header form {
+    margin: 15px;
+    justify-content: flex-end;
+}
+
+.search {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 1.2rem;
+  padding: 0.5rem 1.5rem;
+  color: white;
+}
+
+.search:focus {
+  outline: none;
+}
+
+.search::placeholder {
+  color: white;
+}
+
+.genre-title{
+    position: relative;
+    margin: auto;
+}
+/*
+  Flex Wrap: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap
+*/
+.movie-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 80px;
+}
+
+.movie {
+  background-color: #373b69;
+  border-radius: 3px;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+  overflow: hidden;     /* For the image do not create a pointed border at the top of the box */
+  position: relative;   /* Relative to .movie-overview */
+  margin: 1rem;
+  width: 300px;
+}
+
+.movie img {
+  object-fit: cover;
+  height: 450px;
+  width: 100%;
+}
+
+.movie-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.movie-info h3 {
+  margin: 0;
+}
+
+/*
+ About the position property and why it is used in the .movie element:
+ https://developer.mozilla.org/en-US/docs/Web/CSS/position
+
+ CSS transform:
+ https://developer.mozilla.org/pt-BR/docs/Web/CSS/transform
+*/
+.movie-overview {
+  background-color: #fff;
+  color: #22254b;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  box-shadow: 0 -3px 5px rgba(0,0,0,0.1);
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+  max-height: 100%;
+  transform: translateY(102%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.movie:hover .movie-overview {
+  transform: translateY(0%);
+}
+
+.tag {
+  background-color: #22254b;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+.tag.green {
+  color: rgb(5, 184, 5);
+}
+
+.tag.orange {
+  color: orange;
+}
+
+.tag.red {
+  color: red;
+}
