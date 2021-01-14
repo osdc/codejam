@@ -84,18 +84,18 @@ body {
 
 .winner-head {
   text-transform: uppercase;
-  left: 50%;
   top: 7%;
-  font-weight: 600;
   font-size: 30px;
   color: #b39b3d;
 }
 
 .winner-1 {
+  left: 40%;
   display: none;
 }
 
 .winner-2 {
+  right: 20%;
   display: none;
 }
 
