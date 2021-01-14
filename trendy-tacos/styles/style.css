@@ -32,6 +32,11 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.inactive {
+  background-color: #f1f1f1;
+  z-index: -1;
+}
+
 .wrapper {
   background-color: #fff;
   width: 80%;
@@ -53,7 +58,7 @@ body {
 }
 
 .word-container {
-  border: 4px solid rgb(179, 155, 61);
+  border: 4px solid #b39b3d;
   top: 30%;
   left: 50%;
   width: 25%;
@@ -63,9 +68,10 @@ body {
   justify-content: center;
   font-size: 20px;
   text-transform: uppercase;
-  color: rgb(179, 155, 61);
+  color: #b39b3d;
   font-weight: 600;
   letter-spacing: 1px;
+  background-color: #fff;
 }
 
 .player-1-section,
@@ -111,7 +117,7 @@ body {
 }
 
 .letter {
-  border-bottom: 3px solid rgb(179, 155, 61);
+  border-bottom: 3px solid #b39b3d;
   display: inline-flex;
   font-size: 30px;
   align-items: center;
@@ -137,7 +143,7 @@ body {
   font-size: 30px;
   font-weight: 1000;
   color: #fff;
-  background-color: rgb(179, 155, 61);
+  background-color: #b39b3d;
   position: relative;
 }
 
@@ -171,4 +177,47 @@ body {
   font-size: 20px;
   padding: 5px 10px;
   text-transform: uppercase;
+}
+
+button {
+  position: absolute;
+  width: 200px;
+  left: 50%;
+  bottom: 20%;
+  font-family: Lato;
+  transform: translateX(-50%);
+  color: #555;
+  background: none;
+  border: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 300;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  font-weight: 600;
+}
+button:hover i {
+  margin-right: 20px;
+}
+
+button:focus {
+  outline: none;
+}
+
+i {
+  color: #b39b3d;
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 32px;
+  line-height: 1;
+  vertical-align: text-top;
+  margin-top: -4px;
+  transition: margin 0.3s;
+}
+
+.new-btn {
+  display: none;
 }
