@@ -1,0 +1,237 @@
+.quote {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+}
+
+.speakers__wrapper {
+  background: var(--bg-secondary);
+}
+.speaker__card {
+  height: 425px;
+
+  overflow-y: hidden;
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  transition: 0.3s;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2);
+  border: 1.25px solid var(--btn-primary);
+  margin: 1rem auto;
+}
+
+@media screen and (max-width: 960px) {
+  .speaker__card {
+    height: 400px;
+    margin: 0.5rem 2rem;
+  }
+}
+
+.card-header {
+  /* background: white !important; */
+  height: 80px;
+}
+
+.card-cover {
+  height: 100px;
+  top: -50px;
+}
+
+.card-avatar {
+  transform: none;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  bottom: 10px;
+}
+
+.card-fullname,
+.card-jobtitle {
+  left: 86px;
+  transform: none;
+}
+
+.card-fullname {
+  bottom: 18px;
+}
+
+.card-jobtitle {
+  bottom: 9px;
+  letter-spacing: 1px;
+  font-size: 10px;
+}
+
+.card-header {
+  position: relative;
+  display: flex;
+  height: 200px;
+  flex-shrink: 0;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.card-cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  height: 160px;
+  top: -20%;
+  left: 0;
+  will-change: top;
+  background-size: cover;
+  background-position: center;
+  filter: blur(25px);
+  transform: scale(1.25);
+  transition: 0.5s;
+  /* background: white !important; */
+  opacity: 0;
+}
+
+.card-avatar {
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  object-position: center;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-64px);
+}
+
+.card-fullname {
+  position: absolute;
+  bottom: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+  transform: translateY(-10px) translateX(-50%);
+  left: 50%;
+}
+.card-jobtitle {
+  position: absolute;
+  bottom: -2.5px;
+  font-size: 11px;
+  white-space: nowrap;
+  font-weight: 500;
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-7px);
+}
+
+.card-main {
+  position: relative;
+  flex: 1;
+  display: flex;
+  padding-top: 10px;
+  flex-direction: column;
+}
+
+.card-subtitle {
+  font-weight: 700;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-desc {
+  line-height: 1.6;
+  color: var(--text-tertiary);
+  font-size: 1.3rem;
+  margin: 0;
+  font-weight: 400;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+}
+
+.card-social {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+.card-social svg {
+  fill: rgb(165, 181, 206);
+  width: 16px;
+  display: block;
+  transition: 0.3s;
+}
+
+.card-social a {
+  color: #8797a1;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  background-color: rgba(93, 133, 193, 0.05);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.card-social a:hover svg {
+  fill: darken(rgb(165, 181, 206), 20%);
+}
+
+.card-social a:last-child {
+  margin-right: 0;
+}
+
+.speaker__card:hover .card-cover {
+  opacity: 1;
+}
+
+@media (max-width: 415px) {
+  .quote {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+  }
+
+  .card-desc {
+    text-align: center;
+    line-height: 1.6;
+    color: var(--text-tertiary);
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 400;
+    width: 100%;
+    margin: auto;
+    padding: 0px;
+  }
+
+  .card-fullname {
+    position: absolute;
+    bottom: 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    transform: translateY(-10px) translateX(-50%);
+    left: 50%;
+  }
+}

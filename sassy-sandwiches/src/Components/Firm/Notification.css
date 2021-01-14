@@ -1,0 +1,147 @@
+.notification {
+  padding: 50px;
+  text-align: center;
+}
+
+.notification > input[type="text"] {
+  width: 20%;
+  margin: auto;
+  margin-bottom: 50px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 30px;
+  border: 1px solid #02a95c;
+  outline: none;
+  font-size: 1.2rem;
+}
+
+.notification > h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+}
+
+.notification_person {
+  background-color: #fff;
+  padding: 20px;
+  width: 45%;
+  margin: auto;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.75);
+  border: 5px solid lightyellow;
+}
+
+.notification_person > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 2;
+  font-size: 1.5rem;
+}
+
+.notification_person > div > strong {
+  font-size: 1.5rem;
+  color: #02a95c;
+}
+
+.notification_person > div > p {
+  font-weight: 700;
+}
+
+@media (max-width: 1100px) {
+  .notification > input[type="text"] {
+    width: 50%;
+  }
+
+  .notification > h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+  }
+
+  .notification_person {
+    width: 70%;
+  }
+}
+
+@media (max-width: 900px) {
+  .notification > input[type="text"] {
+    width: 60%;
+  }
+
+  .notification > h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+  }
+
+  .notification_person {
+    width: 80%;
+  }
+
+  .notification_person > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 2;
+    font-size: 1.2rem;
+  }
+
+  .notification_person > div > strong {
+    font-size: 1.2rem;
+    color: #02a95c;
+  }
+
+  .notification_person > div > p {
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 600px) {
+  .notification > input[type="text"] {
+    width: 80%;
+  }
+
+  .notification_person {
+    width: 90%;
+  }
+}
+
+@media (max-width: 415px) {
+  .notification {
+    padding: 10px;
+  }
+
+  .notification > input[type="text"] {
+    width: 80%;
+  }
+
+  .notification > h1 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+  }
+
+  .notification_person {
+    width: 80%;
+  }
+
+  .notification_person > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 2;
+    font-size: 0.7rem;
+  }
+
+  .notification_person > div > strong {
+    font-size: 0.7rem;
+    color: #02a95c;
+  }
+
+  .notification_person > div > p {
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,73 @@
+import React from "react";
+import "./Showcase.css";
+import { useHistory } from "react-router-dom";
+import { useAuth } from "../../AuthContext";
+import { data } from "../quotes/quotesData";
+import Quote from "../quotes/Quote";
+
+function Showcase() {
+  const History = useHistory();
+
+  const { currentUser } = useAuth();
+
+  const handleNeedies = (e) => {
+    e.preventDefault();
+    History.push("/needies");
+  };
+
+  const handleSignup = (e) => {
+    e.preventDefault();
+    History.push("/signup");
+  };
+
+  return (
+    <div className="showcase">
+      <div className="showcase_overlay"></div>
+      <div className="showcase_main">
+        <h1>Today is your opportunity to build the tomorrow of someone.</h1>
+        {currentUser ? (
+          <button onClick={handleNeedies}>See the Needies</button>
+        ) : (
+          <button onClick={handleSignup}>Get Started</button>
+        )}
+      </div>
+      <div className="showcase_needies">
+        <h1>We need Funds!</h1>
+        <div className="showcase_needies_grid">
+          <img
+            src="https://s3-eu-west-1.amazonaws.com/appearhere-blog/2018/11+November/01+Advice+from+the+shopkeepers/Anatome+3.jpg"
+            alt=""
+          />
+          <img
+            src="https://image.freepik.com/free-photo/shopkeeper-grocery-store_8595-3271.jpg"
+            alt=""
+          />
+          <img
+            src="https://cdn.alleywatch.com/wp-content/uploads/2020/02/laptop-office-working-men-3153201.jpg"
+            alt=""
+          />
+          <img
+            src="https://previews.123rf.com/images/perig76/perig761505/perig76150500007/39814844-view-of-a-farmer-team-at-work-in-a-greenhouse.jpg"
+            alt=""
+          />
+          <img
+            src="https://cdn.hrpayrollsystems.net/wp-content/uploads/2019/01/Depositphotos_14150393_m-2015.jpg"
+            alt=""
+          />
+          <img
+            src="https://www.rcolpobuilders.com.au/wp-content/uploads/2015/12/Colpo-team-5WEB33.jpg"
+            alt=""
+          />
+        </div>
+        <button onClick={handleNeedies}>See the Needies</button>
+      </div>
+      <div className="showcase_quotes">
+        {data.map((cur) => {
+          return <Quote name={cur.name} url={cur.url} quote={cur.quote} />;
+        })}
+      </div>
+    </div>
+  );
+}
+
+export default Showcase;
