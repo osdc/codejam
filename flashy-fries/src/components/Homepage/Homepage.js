@@ -18,14 +18,14 @@ function Homepage() {
       </div>
       <br/>
       <div className="descr">
-         <div className="head2"> Studying | Dating<br /></div>
+         <div className="head2"><br /> &nbsp;&nbsp;Studying | Dating<br /></div>
           <div className="first">
-          &nbsp;&nbsp;&nbsp;Two far ends of the spectrum, right?</div>
-          <div className="second">Get the best of both worlds with Study Date™ <br /></div>
-          &nbsp;We combine studying and online dating, to help you score in all spheres of life!
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Two far ends of the spectrum, right?</div>
+          <div className="second"> Get the best of both worlds with Study Date™ <br /></div>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We combine studying and online dating, to help you score in all spheres of life!
           <br />
-         <h2 className="third"> How to use<br /></h2>
-          <ul> <li> Visit the Study Date™ website and create an account on it for free. You are given the option to register either as a **student** or as a **teacher**. <br />
+         <h2 className="third"> &nbsp;&nbsp;How to use<br /></h2>
+          <ul> <li> Visit the Study Date™ website and create an account on it for free. You are given the option to register either as a student or as a teacher. <br />
 </li>
 <li>Choose the topic you want to study with or teach a random online date.<br />
 </li>
@@ -36,7 +36,7 @@ function Homepage() {
 Our backend matches you with someone who wants to study the same topic and initiates a video call for you with them.<br />
 </li>
 <li>
-After you are done studying on video call, you can obtain your reward (cute cat photos) for completing the Study Date™.<br />
+After you are done studying on video call, you can obtain your reward (cute dog & cat photos) for completing the Study Date™.<br />
     </li>
         </ul>
         </div>

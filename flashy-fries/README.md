@@ -16,7 +16,7 @@ This is how Study Date™ works:
 * Choose the topic you want to study with or teach a random online date.
 * You can either choose to study with a student (Study Date™) or a teacher.
 * Our backend matches you with someone who wants to study the same topic and initiates a video call for you with them.
-* After you are done studying on video call, you can obtain your reward (cute cat photos) for completing the Study Date™.
+* After you are done studying on video call, you can obtain your reward (cute dog & cat photos) for completing the Study Date™.
 ______
 We have used the widely hated and ridiculed Comic Sans MS font for *designing* our logo, because why not, since we are *combining opposites*. :smiley:
 

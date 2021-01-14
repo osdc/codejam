@@ -7,7 +7,7 @@
   font-size: 200px;
   display: inline;
   height: 200px;
-  text-align: center;
+  text-align: left;
   font-family: 'Anton', sans-serif;
   color: white;
  
@@ -18,7 +18,7 @@
 }
 .first
 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Yusei Magic', sans-serif;
   display: inline;
 }
 .second
@@ -29,7 +29,7 @@
 .third
 {font-size: 50px;
   text-align: center;
- color:yellow;
+ color:#D3C20E;
  display: inline;
  margin: 20px;
  
@@ -38,13 +38,14 @@ img {
   display: inline;
   border-radius: 50%;
   width: 200px;
+  margin: 70px;
   
   
 }
 .descr {
   
   color: white;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Yusei Magic', monospace;
 }
 .description {
   font-family: Pacifico;
