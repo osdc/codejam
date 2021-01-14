@@ -1,0 +1,3 @@
+[submodule "dexterous-dosas"]
+	path = dexterous-dosas
+	url = https://github.com/starkah/Chess-Tunes
