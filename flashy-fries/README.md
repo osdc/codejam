@@ -20,9 +20,9 @@ With our oxymoronic [Study Date™](https://study-date-eda7b.web.app/), we help 
 ## How to use Study Date?
 This is how Study Date™ works:
 * Visit the Study Date™ website and create an account on it for free. You are given the option to register either as a **student** or as a **teacher**.
-<img src=src/components/Homepage/ss1.png height=200>
+<img src=src/components/Homepage/ss1.PNG height=200>
 <p align=center>
-<img src=src/components/Homepage/ss2.png height=200> </p>
+<img src=src/components/Homepage/ss2.PNG height=200> </p>
 
 * After getting logged in, visit the dashboard to see the **list of topics** available.
 * Choose the topic you want to study with or teach a random online date.
@@ -32,9 +32,9 @@ This is how Study Date™ works:
   
 ## How to set up
 1. Fork the GitHub repository.
-   <img src=src/components/Homepage/ss3.png>
+   <img src=src/components/Homepage/ss3.PNG>
 2. Copy and clone your fork's URL using the ```git clone [URL]``` command.
-   <img src=src/components/Homepage/ss4.png>
+   <img src=src/components/Homepage/ss4.PNG>
 3. Change your directory to reach **Study Date's folder*** by ```cd codejam-21/flashy-fries/```
 4. Install the required modules using ```npm install```
 5. Run the command ```npm start``` 
