@@ -138,7 +138,7 @@ function Dashboard() {
           <>
             {`Join meeting: ${meetLink}`}
             <a href={meetLink} className="btn" onClick={updateMeetingStatus}>
-              Join
+              <h3>Join</h3>
             </a>
           </>
         ) : null}
@@ -148,11 +148,11 @@ function Dashboard() {
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="select">
               <label className="container">
-                One
+                Trignometry
                 <input
                   type="checkbox"
                   name="topic"
-                  value="one"
+                  value="Trignometry"
                   ref={register}
                 />
                 <span className="checkmark"></span>
@@ -160,11 +160,11 @@ function Dashboard() {
             </div>
             <div>
               <label className="container">
-                Two
+              Carbon and its compounds
                 <input
                   type="checkbox"
                   name="topic"
-                  value="two"
+                  value="Carbon and its compounds"
                   ref={register}
                 />
                 <span className="checkmark"></span>
@@ -172,11 +172,11 @@ function Dashboard() {
             </div>
             <div>
               <label className="container">
-                Three
+              The Rise of Nationalism in Europe
                 <input
                   type="checkbox"
                   name="topic"
-                  value="three"
+                  value="The Rise of Nationalism in Europe"
                   ref={register}
                 />
                 <span className="checkmark"></span>
@@ -184,11 +184,11 @@ function Dashboard() {
             </div>
             <div>
               <label className="container">
-                Four
+              Magnetic Effects of Electric Current
                 <input
                   type="checkbox"
                   name="topic"
-                  value="four"
+                  value="Magnetic Effects of Electric Current"
                   ref={register}
                 />
                 <span className="checkmark"></span>
@@ -218,7 +218,7 @@ function Dashboard() {
           })}
         </ul>
       )}
-      <button className="btn" onClick={() => setIsEditing((value) => !value)}>
+      <button className="btn edit" onClick={() => setIsEditing((value) => !value)}>
         {isEditing ? "Cancel" : "Edit"}
       </button>
     </div>

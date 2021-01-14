@@ -87,13 +87,38 @@ body {
 
   border-color: #522d83;
 
-  height: 5vw;
+  height: 3.7vw;
 
-  width: 10vw;
+  width: 9vw;
 
   font: bold px arial, sans-serif;
 
   text-shadow: none;
 
   margin-bottom: 15px;
+  margin-left: 0.5vw;
+  padding-bottom: 1.5vw;
+  margin-top: 0.5vw;
 }
+ .edit
+{
+  background:#975ee0;
+
+  color: white;
+
+  border-style: outset;
+
+  
+
+  height: 3.7vw;
+
+  width: 9vw;
+
+  font: bold px arial, sans-serif;
+
+  text-shadow: none;
+
+  margin-bottom: 15px;
+  
+
+} 
