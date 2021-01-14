@@ -10,10 +10,11 @@
   height: 200px;
   text-align: left;
   font-family: 'Anton', sans-serif;
-  color: white; 
+  color: rgb(184, 179, 255); 
 }
 .head2
 {
+  color: #411966;
   font-family:'Bree Serif';
   font-size:70px;
 }
@@ -34,7 +35,7 @@
   font-family: 'Bree Serif';
   font-size: 50px;
   text-align: center;
- color:#D3C20E;
+  color: #411966;
  display: inline;
  margin: 20px;
 }
@@ -48,9 +49,9 @@ img {
 .descr {
   font-size: 120%;
   position: relative;
-  top: -150px;
-  left: 150px;
-  color: white;
+  top: -100px;
+  left: 350px;
+  color: rgb(237, 215, 255);
   font-family: 'Yusei Magic', monospace;
 }
 .description {

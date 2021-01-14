@@ -20,12 +20,12 @@ function Homepage() {
       <div className="descr">
          <div className="head2"><br /> &nbsp;&nbsp;Studying | Dating<br /></div>
           <div className="first">
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Two far ends of the spectrum, right?<br /></div>
-          <div className="second">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the best of both worlds with Study Date <br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We combine studying with online dating to offer a unique experience!<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Two far ends of the spectrum, right? </div>
+          <div className="second">Get the best<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of both worlds with Study Date!
+          We combine studying<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; with online dating to offer a unique experience!<br />
           <br /></div>
          <h2 className="third"> &nbsp;&nbsp;How to use<br /></h2>
-          <ul> <li> Visit the Study Date website and create an account on it for free.<br /> You are given the option to register either as a student or as a teacher. <br />
+          <ul> <li> Visit the Study Date website and create an account for free.<br /> You are given the option to register either as a student or as a teacher. <br />
 </li>
 <li>Choose the topic you want to study with or teach a random online date.<br />
 </li>
