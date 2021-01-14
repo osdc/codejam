@@ -22,7 +22,7 @@ Head straight in -> [FREEMAN](https://ishan-saini.github.io/codejam-21/trendy-ta
 - **Rules**
 
   1. There are 3 rounds, the player with the highest score will win in the end.
-  2. With each wrong guess one part of the stand will dissapear and you'll be helping Chintu escape. That means you only 4 chances.
+  2. With each wrong guess one part of the stand will dissapear and you'll be helping Chintu escape. That means you only have 4 chances.
   3. If you exhaust all of your 4 chances, the other player will win regardless. (This feature might get removed in future if it doesn't work out well)
   4. Any letter that isn't present in the jumbled word would still be considered a wrong guess.
   5. Use Keyboard keys for input and mouse for interacting with buttons.
