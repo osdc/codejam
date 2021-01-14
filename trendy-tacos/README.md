@@ -14,8 +14,9 @@ In Freeman, we need to stop Chintu (sexist much?) from escaping. He's being hang
 This game is based on hangman but its purpose is exactly opposite (Don't let him escape).  
 This is a multiplayer/PVP game. Users will be given a jumbled word with a hint.
 
-Jumbled words consist of a closed source software/technology and its open source alternative. (Yes, we've literally **combined opposites**)  
-You'll be provided with hints which will let you know the domain of a pair of technology which has been given to you.
+Jumbled words consist of a closed source software/technology and its open source alternative combined together.  
+You'll be provided with hints which will let you know the domain of a pair of technology which has been given to you.  
+One player will guess the closed source technology while the other player will guess its open source alternative.
 
 Head straight in -> [FREEMAN](https://ishan-saini.github.io/codejam-21/trendy-tacos/)
 
