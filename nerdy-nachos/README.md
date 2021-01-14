@@ -17,4 +17,8 @@
 ```
 and then head over to https://localhost:3000
 
+## Future Plans
+
+Currently the App only shows the `Most Popular` movies, we plan to add `Where Can You Watch` feature and sorting abilities in the future.
+
 Frontend is made with the help of [Florin pop's video](https://www.youtube.com/watch?v=sZ0bZGfg_m4)
