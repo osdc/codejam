@@ -17,11 +17,13 @@
 }
 .first
 {
+  font-size: 150%;
   font-family: 'Yusei Magic', sans-serif;
   display: inline;
 }
 .second
 {
+  font-size: 150%;
   font-family: 'Yusei Magic', sans-serif;
   display: inline;
 }
@@ -41,8 +43,10 @@ img {
 }
 
 .descr {
+  font-size: 120%;
   position: relative;
   top: -150px;
+  left: 300px;
   color: white;
   font-family: 'Yusei Magic', monospace;
 }
@@ -50,6 +54,11 @@ img {
   font-family: Pacifico;
   display: grid;
   grid-template-columns: 0.05fr 1fr;
+}
+ul {
+  position: relative;
+  left: 50px;
+  top: -10px;
 }
 .graphics {
   position: relative;
