@@ -7,6 +7,7 @@
 <hr>
 
 # Welcome to OSDCodeJam'21!
+This Jam has ended ([see the winners](#winning-teams))
 
 </div>
 
@@ -28,9 +29,13 @@ This is something you might be asking yourself. A Code Jam is a chance to create
 
 ## Particulars
 
-- #### The winners get Amazon gift cards worth Rs. 1k, and swags!
+- #### The winners get online gift cards worth Rs. 1k, and swags!
 
 - **Theme:** ***Combining Opposites***
+
+- ### Winning Teams:
+  - 1st prize: `flashy-fries`
+  - 2nd prize: `trendy-tacos`
 
 ## Timeline
 
@@ -38,7 +43,7 @@ This is something you might be asking yourself. A Code Jam is a chance to create
 - Teams Announcement: 8 January 2021
 - Theme Announcement: 8 January 2021
 - Jamming (Coding Period): 9-14 January 2021
-- Results Meetup: TBD
+- Results Meetup: 22 January 2021
 
 ## Format
 
