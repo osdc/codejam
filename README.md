@@ -39,30 +39,29 @@ TBA
 
 ## Submitting your Project
 
-### Using git submodules
-
-If you've already made a separate repository for your project, you can use
-[git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) to submit
-your project.
+The submissions for this Jam will be through [git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules). Create your project freely in your own repository and follow these steps to submit your project:
 
 #### 1. Fork this repository
 
-Start by [forking this repository](https://github.com/osdc/codejam-21/fork).
+Start by [forking this repository](https://github.com/osdc/codejam/fork).
 
 #### 2. Add your project as a submodule
 
-Clone your repository and run
+Clone your repository and run:
 
 ```
 $ git submodule add <url for your project's git repository> submissions/<your team name>
 ```
+(Replace the stuff inside `<>` with what's mentioned)
 
 #### 3. Commit the changes and create a Pull Request
 
-Commit the changes and open a PR to the `v2` branch of this repository. You
+Commit the changes and open a PR to the `v2` branch of this repository (please double check the branch). You
 don't need to manually update submodules for every change,
 [dependabot](https://dependabot.com/submodules/) will automatically do that for
 you. So, you can just make this PR once.
+
+**Note: Only one team member needs to do this, and we suggest that you add your submission as soon as you create your project repository (it will keep updating automatically).**
 
 ## Rules
 
