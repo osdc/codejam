@@ -6,7 +6,7 @@
 
 <hr>
 
-# Welcome to OSDCodeJam '21!
+# Welcome to OSDCodeJam v2!
 
 </div>
 
@@ -42,7 +42,8 @@ TBA
 ### Using git submodules
 
 If you've already made a separate repository for your project, you can use
-[git submodules]() to submit your project.
+[git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) to submit
+your project.
 
 #### 1. Fork this repository
 
@@ -66,12 +67,8 @@ you. So, you can just make this PR once.
 ## Rules
 
 - This Jam is only open for JIIT Noida students (Both 62 and 128).
-- Your project should be platform agnostic. For example, if you use filepaths in
-  your submission, use pathlib (in Python) to create platform agnostic Path
-  objects instead of hardcoding the paths.
 - There is no restriction on the type of project you come up with, or the
-  languages you use. It can be anything from a web app to a system library
-  (Hardware projects excluded).
+  languages you use. It can be anything from a web app to a system library.
 - You must document precisely how to install, setup and run your project. This
   should be as easy as possible (consider using dependency managers).
 - All code must be written and committed within the time constrictions of the
@@ -82,8 +79,8 @@ you. So, you can just make this PR once.
   team. These contributions do not necessarily have to be code, for example it's
   absolutely fine for someone to contribute management, documentation, graphics
   or audio. Team members that do not contribute will be removed from the Code
-  Jam, and will not receive their share of any prizes the team may win.
-- You must use GitHub as source control.
+  Jam.
+- You must use Git as a version control system.
 - All code and assets must be compatible with an Open-Source license. This is
   because we will be merging your submission into this repo at the end of the
   jam.
