@@ -1,4 +1,4 @@
-![OSDCodeJam Banner](./assets/codejam-banner.png)
+![OSDCodeJam Banner](./assets/codejam-banner.gif)
 
 <div align="center">
 
