@@ -10,6 +10,15 @@
 
 </div>
 
+## :ledger: Index
+
+- [What is a Code Jam?](#what-is-a-code-jam)
+- [Timeline](#timeline)
+- [Format](#format)
+- [Submitting your Project](#submitting-your-project)
+- [Rules](#rules)
+- [Judging](#judging)
+
 ## What is a Code Jam?
 
 This is something you might be asking yourself. A Code Jam is a chance to create
@@ -20,7 +29,11 @@ then have around a week's time to create the best project you can. See
 
 ## Timeline
 
-TBA
+- Registration: 20-25 Sept 2021
+- Teams Announcement: 29 Sept 2021
+- Theme Announcement: 1 Oct 2021
+- Jamming (Coding Period):1-5 Oct 2021
+- Results Meetup: 9 Oct 2021
 
 ## Format
 
