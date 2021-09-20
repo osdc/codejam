@@ -32,7 +32,14 @@ then have around a week's time to create the best project you can. See
 
 - #### Register at: https://codejam.ossdevs.com/register
 - #### The winners get Biryani monies in prizes! <br>
-Well, "Biryani monies" is a recurring slang in the [JODC Discord server](https://discord.com/invite/TC3DymJ) (which is a super fun and lively place to hang out btw) which is used to refer to anyone from the community giving someone a treat. Since this is not a sponsored event, we'd like to give the winners some prize from our own side as appreciation, and that is Biryani (or anything else you like to eat)! The treat can be in form of a food delivery coupon, or any other form.
+
+Well, "Biryani monies" is a recurring slang in the
+[JODC Discord server](https://discord.com/invite/TC3DymJ) (which is a super fun
+and lively place to hang out btw) which is used to refer to anyone from the
+community giving someone a treat. Since this is not a sponsored event, we'd like
+to give the winners some prize from our own side as appreciation, and that is
+Biryani (or anything else you like to eat)! The treat can be in form of a food
+delivery coupon, or any other form.
 
 ## Timeline
 
@@ -60,7 +67,10 @@ Well, "Biryani monies" is a recurring slang in the [JODC Discord server](https:/
 
 ## Submitting your Project
 
-The submissions for this Jam will be through [git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules). Create your project freely in your own repository and follow these steps to submit your project:
+The submissions for this Jam will be through
+[git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules). Create
+your project freely in your own repository and follow these steps to submit your
+project:
 
 #### 1. Fork this repository
 
@@ -73,16 +83,19 @@ Clone your repository and run:
 ```
 $ git submodule add <url for your project's git repository> submissions/<your team name>
 ```
+
 (Replace the stuff inside `<>` with what's mentioned)
 
 #### 3. Commit the changes and create a Pull Request
 
-Commit the changes and open a PR to the `v2` branch of this repository (please double check the branch). You
-don't need to manually update submodules for every change,
-[dependabot](https://dependabot.com/submodules/) will automatically do that for
-you. So, you can just make this PR once.
+Commit the changes and open a PR to the `v2` branch of this repository (please
+double check the branch). You don't need to manually update submodules for every
+change, [dependabot](https://dependabot.com/submodules/) will automatically do
+that for you. So, you can just make this PR once.
 
-**Note: Only one team member needs to do this, and we suggest that you add your submission as soon as you create your project repository (it will keep updating automatically).**
+**Note: Only one team member needs to do this, and we suggest that you add your
+submission as soon as you create your project repository (it will keep updating
+automatically).**
 
 ## Rules
 
@@ -94,6 +107,8 @@ you. So, you can just make this PR once.
 - All code must be written and committed within the time constrictions of the
   Jam. Late commits may be reverted, so make sure you leave enough time to bug
   test your program.
+- You can reuse code from other open source projects provided that you give them
+  appropriate attribution and follow their LICENSE agreements.
 - You must get contributions from every member of your team, if you have an
   issue with someone on your team please contact a member of the administration
   team. These contributions do not necessarily have to be code, for example it's
