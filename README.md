@@ -13,6 +13,7 @@
 ## :ledger: Index
 
 - [What is a Code Jam?](#what-is-a-code-jam)
+- [Particulars](#particulars)
 - [Timeline](#timeline)
 - [Format](#format)
 - [Submitting your Project](#submitting-your-project)
@@ -27,12 +28,19 @@ like yourself with whom you collaborate and make a project on a given theme. You
 then have around a week's time to create the best project you can. See
 [Format](#format) for detailed information.
 
+## Particulars
+
+- #### Register at: https://codejam.ossdevs.com/register
+- #### The winners get Biryani monies in prizes! <br>
+Well, "Biryani monies" is a recurring slang in the [JODC Discord server](https://discord.com/invite/TC3DymJ) (which is a super fun and lively place to hang out btw) which is used to refer to anyone from the community giving someone a treat. Since this is not a sponsored event, we'd like to give the winners some prize from our own side as appreciation, and that is Biryani (or anything else you like to eat)! The treat can be in form of a food delivery coupon, or any other form.
+
 ## Timeline
 
 - Registration: 20-25 Sept 2021
+- Meetup on explanation of the CodeJam / AMA session: 25 Sept 2021
 - Teams Announcement: 29 Sept 2021
-- Theme Announcement: 1 Oct 2021
-- Jamming (Coding Period):1-5 Oct 2021
+- Theme Announcement (and Hacktoberfest introduction): 1 Oct 2021
+- Jamming (Coding Period): 1-5 Oct 2021
 - Results Meetup: 9 Oct 2021
 
 ## Format
@@ -43,7 +51,7 @@ then have around a week's time to create the best project you can. See
   number of registrations) based on their skills and experience to have teams
   with equal skill levels.
 - The organizers announce the teams and theme for the Jam.
-- Team members communicate and collaborate to make a project within the 6 days
+- Team members communicate and collaborate to make a project within the 5 days
   of the Jam, that fits their interpretation of the theme.
 - The project is [submitted to this repo](#submitting-your-project) via a Pull
   Request.
