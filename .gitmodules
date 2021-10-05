@@ -7,3 +7,6 @@
 [submodule "submissions/candy-crinkles"]
 	path = submissions/candy-crinkles
 	url = https://github.com/yashashxrma/WhoopeeWebs.git
+[submodule "submissions/pragmatic-pinatas"]
+	path = submissions/pragmatic-pinatas
+	url = https://github.com/madhavmehndiratta/codejam.git
