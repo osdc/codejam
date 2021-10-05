@@ -4,3 +4,6 @@
 [submodule "submissions/tea-baggins"]
 	path = submissions/tea-baggins
 	url = https://github.com/thissarthak/tea-baggins.git
+[submodule "submissions/Chicken-Rice"]
+	path = submissions/Chicken-Rice
+	url = https://github.com/tusharpasricha/tabX.git
