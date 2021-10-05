@@ -30,7 +30,7 @@ then have around a week's time to create the best project you can. See
 
 ## Particulars
 
-- #### Register at: https://codejam.ossdevs.com/register
+- #### Theme: Kill The Cliche
 - #### The winners get Biryani monies in prizes! <br>
 
 Well, "Biryani monies" is a recurring slang in the
