@@ -13,3 +13,6 @@
 [submodule "submissions/prickly-poppins"]
 	path = submissions/prickly-poppins
 	url = https://github.com/mgjain9871/Tel-Finet.git
+[submodule "submissions/fuzzy-soda"]
+	path = submissions/fuzzy-soda
+	url = https://github.com/vibhor172/Covid-Assistance-Outlet
