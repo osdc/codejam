@@ -1,3 +1,6 @@
 [submodule "submissions/Tuxedo_Penguins"]
 	path = submissions/Tuxedo_Penguins
 	url = https://github.com/ishikajn8126/Psychologix.git
+[submodule "submissions/tea-baggins"]
+	path = submissions/tea-baggins
+	url = https://github.com/thissarthak/tea-baggins.git
