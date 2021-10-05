@@ -16,3 +16,6 @@
 [submodule "submissions/fuzzy-soda"]
 	path = submissions/fuzzy-soda
 	url = https://github.com/vibhor172/Covid-Assistance-Outlet
+[submodule "submissions/pragmatic-pinatas"]
+	path = submissions/pragmatic-pinatas
+	url = https://github.com/madhavmehndiratta/codejam.git
