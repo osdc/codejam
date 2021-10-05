@@ -78,10 +78,15 @@ Start by [forking this repository](https://github.com/osdc/codejam/fork).
 
 #### 2. Add your project as a submodule
 
-Clone your repository and run:
+Clone your repository:
+```
+git clone --depth 1 https://github.com/<username>/codejam
+```
+
+and run:
 
 ```
-$ git submodule add <url for your project's git repository> submissions/<your team name>
+git submodule add <url for your project's git repository> submissions/<your team name>
 ```
 
 (Replace the stuff inside `<>` with what's mentioned)
