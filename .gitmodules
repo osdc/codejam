@@ -10,3 +10,6 @@
 [submodule "submissions/candy-crinkles"]
 	path = submissions/candy-crinkles
 	url = https://github.com/yashashxrma/WhoopeeWebs.git
+[submodule "submissions/prickly-poppins"]
+	path = submissions/prickly-poppins
+	url = https://github.com/mgjain9871/Tel-Finet.git
